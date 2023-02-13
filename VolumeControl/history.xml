@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<Release
+		version="0.0.1.2"
+		date="2023-02-13"
+		note="Доработан механизм автообновления. 
+Исправлены ошибки."
+		path="https://github.com/Mesilin/SimpleVolumeControl/blob/master/VolumeControl/Setup.exe?raw=true"/>
+	
+	<Release
+		version="0.0.1.1"
+		date="2023-02-10"
+		note="some description"
+		path="https://github.com/Mesilin/SimpleVolumeControl/blob/master/VolumeControl/Setup.exe?raw=true"/>
+</root>
