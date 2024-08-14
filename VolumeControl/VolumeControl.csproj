@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -13,7 +13,9 @@
     <ApplicationManifest>app.manifest</ApplicationManifest>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <FileVersion>0.0.1.2</FileVersion>
-    <ApplicationIcon>ico.ico</ApplicationIcon>
+    <ApplicationIcon>ico2.ico</ApplicationIcon>
+    <NeutralLanguage>ru</NeutralLanguage>
+    <Company>E. Mesilin</Company>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -35,15 +37,15 @@
     <Compile Remove="DetectSequences.cs" />
     <Compile Remove="LogKeys.cs" />
     <Compile Remove="QuickStart.cs" />
-    <Compile Remove="SettingsForm.cs" />
-    <Compile Remove="SettingsForm.Designer.cs" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Remove="SettingsForm.resx" />
     <EmbeddedResource Remove="SettingsForm.ru.resx" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="ico.ico" />
+    <None Remove="ico.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ico2.ico" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="TaskScheduler" Version="2.10.1" />
@@ -60,21 +62,12 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Update="about.txt">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
     <None Update="App.config">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-    </None>
-    <None Update="lic.txt">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Update="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
   </ItemGroup>
-  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-    <Exec Command="$(ProjectDir)Inno_Setup\iscc.exe $(ProjectDir)Inno_Setup\VolumeControlSetupScript.iss" />
-  </Target>
 </Project>

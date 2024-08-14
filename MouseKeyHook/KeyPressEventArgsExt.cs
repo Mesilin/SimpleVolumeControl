@@ -83,7 +83,7 @@ namespace Gma.System.MouseKeyHook
             var wParam = data.WParam;
             var lParam = data.LParam;
 
-            if ((int) wParam != Messages.WM_KEYDOWN && (int) wParam != Messages.WM_SYSKEYDOWN)
+            if ((int) wParam != Messages.Keydown && (int) wParam != Messages.Syskeydown)
                 yield break;
 
             var keyboardHookStruct =
@@ -93,7 +93,7 @@ namespace Gma.System.MouseKeyHook
             var scanCode = keyboardHookStruct.ScanCode;
             var fuState = keyboardHookStruct.Flags;
 
-            if (virtualKeyCode == KeyboardNativeMethods.VK_PACKET)
+            if (virtualKeyCode == KeyboardNativeMethods.Packet)
             {
                 var ch = (char) scanCode;
                 yield return new KeyPressEventArgsExt(ch, keyboardHookStruct.Time);

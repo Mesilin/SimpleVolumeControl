@@ -20,11 +20,11 @@ namespace Gma.System.MouseKeyHook.Implementation
     /// </remarks>
     public class KeyboardState
     {
-        private readonly byte[] m_KeyboardStateNative;
+        private readonly byte[] _mKeyboardStateNative;
 
         private KeyboardState(byte[] keyboardStateNative)
         {
-            m_KeyboardStateNative = keyboardStateNative;
+            _mKeyboardStateNative = keyboardStateNative;
         }
 
         /// <summary>
@@ -41,7 +41,7 @@ namespace Gma.System.MouseKeyHook.Implementation
 
         internal byte[] GetNativeState()
         {
-            return m_KeyboardStateNative;
+            return _mKeyboardStateNative;
         }
 
         /// <summary>
@@ -96,7 +96,7 @@ namespace Gma.System.MouseKeyHook.Implementation
             var virtualKeyCode = (int) key;
             if (virtualKeyCode < 0 || virtualKeyCode > 255)
                 throw new ArgumentOutOfRangeException("key", key, "The value must be between 0 and 255.");
-            return m_KeyboardStateNative[virtualKeyCode];
+            return _mKeyboardStateNative[virtualKeyCode];
         }
 
         private static bool GetHighBit(byte value)

@@ -1,54 +1,53 @@
-﻿// This code is distributed under MIT license. 
-// Copyright (c) 2010-2018 George Mamaladze
-// See license.txt or https://mit-license.org/
-
-using System;
+﻿using System;
 using System.Windows.Forms;
 using System.Diagnostics;
 using System.Runtime.InteropServices;
 using Gma.System.MouseKeyHook;
+using System.Threading;
 namespace VolumeControl
 {
     internal class Program
     {                                                                                                                       
-        private static void Main(string[] args)
+        private static void Main()
         {
-            var icon = new NotifyIcon();
-
-            icon.Visible = true;
-            Do();
-            //Application.Run(new ApplicationContext());
-            Application.Run(new SettingsForm2());
+            using var sem = new Semaphore(1, 1, "SimpleMouseVolumeControl");
+            if (sem.WaitOne(0))
+            {
+                Application.EnableVisualStyles();
+                Application.SetCompatibleTextRenderingDefault(false);
+                Do();
+                Application.Run(new SettingsForm2());
+            }
+            else
+                MessageBox.Show("Программа уже запущена.");
         }
 
         #region перехват нажатия ScrollLock
-        private const int WH_KEYBOARD_LL = 13;
+        private const int WM_WH_KEYBOARD_LL = 13;
         private const int WM_KEYDOWN = 0x0100;
-        private static LowLevelKeyboardProc _proc = HookCallback;
-        private static IntPtr _hookID = IntPtr.Zero;
+        private static readonly LowLevelKeyboardProc Proc = HookCallback;
+        private static IntPtr _hookId = IntPtr.Zero;
         private static IntPtr SetHook(LowLevelKeyboardProc proc)
         {
-            using (Process curProcess = Process.GetCurrentProcess())
-            using (ProcessModule curModule = curProcess.MainModule)
-            {
-                return SetWindowsHookEx(WH_KEYBOARD_LL, proc, GetModuleHandle(curModule.ModuleName), 0);
-            }
+            using var curProcess = Process.GetCurrentProcess();
+            using var curModule = curProcess.MainModule;
+            return SetWindowsHookEx(WM_WH_KEYBOARD_LL, proc, GetModuleHandle(curModule.ModuleName), 0);
         }
 
         private delegate IntPtr LowLevelKeyboardProc(int nCode, IntPtr wParam, IntPtr lParam);
 
         private static IntPtr HookCallback(int nCode, IntPtr wParam, IntPtr lParam)
         {
-            if (VolumeControl.Properties.Settings.Default.MuteOnScrollLock && (nCode >= 0) && (wParam == (IntPtr)WM_KEYDOWN))
+            if (Properties.Settings.Default.MuteOnScrollLock && (nCode >= 0) && (wParam == (IntPtr)WM_KEYDOWN))
             {
-                int vkCode = Marshal.ReadInt32(lParam);
+                var vkCode = Marshal.ReadInt32(lParam);
                 if (((Keys)vkCode == Keys.Scroll))
                 {
                     keybd_event((byte)Keys.VolumeMute, 0, 0, 0);
                     return (IntPtr)1;
                 }
             }
-            return CallNextHookEx(_hookID, nCode, wParam, lParam);
+            return CallNextHookEx(_hookId, nCode, wParam, lParam);
         }
 
         [DllImport("user32.dll", CharSet = CharSet.Auto, SetLastError = true)]
@@ -60,7 +59,7 @@ namespace VolumeControl
         [DllImport("user32.dll", CharSet = CharSet.Auto, SetLastError = true)]
         private static extern IntPtr CallNextHookEx(IntPtr hhk, int nCode, IntPtr wParam, IntPtr lParam);
 
-        [DllImport("kernel32.dll", CharSet = CharSet.Auto, SetLastError = true)]
+        [DllImport("kernel32.dll", CharSet = CharSet.Unicode, SetLastError = true)]
         private static extern IntPtr GetModuleHandle(string lpModuleName);
 
         [DllImport("user32.dll")]
@@ -68,17 +67,17 @@ namespace VolumeControl
 
         #endregion перехват нажатия ScrollLock
 
-        static IKeyboardMouseEvents keyboardMouseEvents;
+        static IKeyboardMouseEvents _keyboardMouseEvents;
 
-        public static async void Do()
+        public static void Do()
         {
 
             //mute по нажатию ScrollLock
-            _hookID = SetHook(_proc);
+            _hookId = SetHook(Proc);
 
-            keyboardMouseEvents = Hook.GlobalEvents();
-            keyboardMouseEvents.MouseWheelExt += KeyboardMouseEvents_MouseWheelExt; //звук колесом мыши при зажатом капсе
-            keyboardMouseEvents.MouseDownExt += KeyboardMouseEvents_MouseDownExt;//Play\Pause при нажатии на колесо мыши с зажатым капсом
+            _keyboardMouseEvents = Hook.GlobalEvents();
+            _keyboardMouseEvents.MouseWheelExt += KeyboardMouseEvents_MouseWheelExt; //звук колесом мыши при зажатом капсе
+            _keyboardMouseEvents.MouseDownExt += KeyboardMouseEvents_MouseDownExt;//Play\Pause при нажатии на колесо мыши с зажатым капсом
 
             //keyboardMouseEvents.KeyDown += KeyboardMouseEvents_KeyDown;
 
@@ -169,10 +168,10 @@ namespace VolumeControl
         {
             if (Control.IsKeyLocked(Keys.CapsLock)) // Checks Capslock is on
             {
-                const int KEYEVENTF_EXTENDEDKEY = 0x1;
-                const int KEYEVENTF_KEYUP = 0x2;
-                keybd_event(0x14, 0x45, KEYEVENTF_EXTENDEDKEY, 0);
-                keybd_event(0x14, 0x45, KEYEVENTF_EXTENDEDKEY | KEYEVENTF_KEYUP, 0);
+                const int keyeventfExtendedkey = 0x1;
+                const int keyeventfKeyup = 0x2;
+                keybd_event(0x14, 0x45, keyeventfExtendedkey, 0);
+                keybd_event(0x14, 0x45, keyeventfExtendedkey | keyeventfKeyup, 0);
             }
         }
         public abstract class Keyboard
@@ -190,9 +189,9 @@ namespace VolumeControl
 
             private static KeyStates GetKeyState(Keys key)
             {
-                KeyStates state = KeyStates.None;
+                var state = KeyStates.None;
 
-                short retVal = GetKeyState((int)key);
+                var retVal = GetKeyState((int)key);
 
                 //If the high-order bit is 1, the key is down
                 //otherwise, it is up.

@@ -122,74 +122,74 @@ namespace Gma.System.MouseKeyHook
 
             switch ((long) wParam)
             {
-                case Messages.WM_LBUTTONDOWN:
+                case Messages.Lbuttondown:
                     isMouseButtonDown = true;
                     button = MouseButtons.Left;
                     clickCount = 1;
                     break;
-                case Messages.WM_LBUTTONUP:
+                case Messages.Lbuttonup:
                     isMouseButtonUp = true;
                     button = MouseButtons.Left;
                     clickCount = 1;
                     break;
-                case Messages.WM_LBUTTONDBLCLK:
+                case Messages.Lbuttondblclk:
                     isMouseButtonDown = true;
                     button = MouseButtons.Left;
                     clickCount = 2;
                     break;
-                case Messages.WM_RBUTTONDOWN:
+                case Messages.Rbuttondown:
                     isMouseButtonDown = true;
                     button = MouseButtons.Right;
                     clickCount = 1;
                     break;
-                case Messages.WM_RBUTTONUP:
+                case Messages.Rbuttonup:
                     isMouseButtonUp = true;
                     button = MouseButtons.Right;
                     clickCount = 1;
                     break;
-                case Messages.WM_RBUTTONDBLCLK:
+                case Messages.Rbuttondblclk:
                     isMouseButtonDown = true;
                     button = MouseButtons.Right;
                     clickCount = 2;
                     break;
-                case Messages.WM_MBUTTONDOWN:
+                case Messages.Mbuttondown:
                     isMouseButtonDown = true;
                     button = MouseButtons.Middle;
                     clickCount = 1;
                     break;
-                case Messages.WM_MBUTTONUP:
+                case Messages.Mbuttonup:
                     isMouseButtonUp = true;
                     button = MouseButtons.Middle;
                     clickCount = 1;
                     break;
-                case Messages.WM_MBUTTONDBLCLK:
+                case Messages.Mbuttondblclk:
                     isMouseButtonDown = true;
                     button = MouseButtons.Middle;
                     clickCount = 2;
                     break;
-                case Messages.WM_MOUSEWHEEL:
+                case Messages.Mousewheel:
                     isHorizontalWheel = false;
                     mouseDelta = mouseInfo.MouseData;
                     break;
-                case Messages.WM_MOUSEHWHEEL:
+                case Messages.Mousehwheel:
                     isHorizontalWheel = true;
                     mouseDelta = mouseInfo.MouseData;
                     break;
-                case Messages.WM_XBUTTONDOWN:
+                case Messages.Xbuttondown:
                     button = mouseInfo.MouseData == 1
                         ? MouseButtons.XButton1
                         : MouseButtons.XButton2;
                     isMouseButtonDown = true;
                     clickCount = 1;
                     break;
-                case Messages.WM_XBUTTONUP:
+                case Messages.Xbuttonup:
                     button = mouseInfo.MouseData == 1
                         ? MouseButtons.XButton1
                         : MouseButtons.XButton2;
                     isMouseButtonUp = true;
                     clickCount = 1;
                     break;
-                case Messages.WM_XBUTTONDBLCLK:
+                case Messages.Xbuttondblclk:
                     isMouseButtonDown = true;
                     button = mouseInfo.MouseData == 1
                         ? MouseButtons.XButton1

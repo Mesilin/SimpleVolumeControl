@@ -17,22 +17,22 @@ namespace Gma.System.MouseKeyHook.WinApi
 
         public static HookResult HookAppMouse(Callback callback)
         {
-            return HookApp(HookIds.WH_MOUSE, callback);
+            return HookApp(HookIds.WhMouse, callback);
         }
 
         public static HookResult HookAppKeyboard(Callback callback)
         {
-            return HookApp(HookIds.WH_KEYBOARD, callback);
+            return HookApp(HookIds.WhKeyboard, callback);
         }
 
         public static HookResult HookGlobalMouse(Callback callback)
         {
-            return HookGlobal(HookIds.WH_MOUSE_LL, callback);
+            return HookGlobal(HookIds.WhMouseLl, callback);
         }
 
         public static HookResult HookGlobalKeyboard(Callback callback)
         {
-            return HookGlobal(HookIds.WH_KEYBOARD_LL, callback);
+            return HookGlobal(HookIds.WhKeyboardLl, callback);
         }
 
         private static HookResult HookApp(int hookId, Callback callback)

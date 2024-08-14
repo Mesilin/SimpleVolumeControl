@@ -8,26 +8,26 @@ namespace Gma.System.MouseKeyHook.Implementation
 {
     internal class ButtonSet
     {
-        private MouseButtons m_Set;
+        private MouseButtons _mSet;
 
         public ButtonSet()
         {
-            m_Set = MouseButtons.None;
+            _mSet = MouseButtons.None;
         }
 
         public void Add(MouseButtons element)
         {
-            m_Set |= element;
+            _mSet |= element;
         }
 
         public void Remove(MouseButtons element)
         {
-            m_Set &= ~element;
+            _mSet &= ~element;
         }
 
         public bool Contains(MouseButtons element)
         {
-            return (m_Set & element) != MouseButtons.None;
+            return (_mSet & element) != MouseButtons.None;
         }
     }
 }

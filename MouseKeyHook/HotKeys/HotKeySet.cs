@@ -21,7 +21,7 @@ namespace Gma.System.MouseKeyHook.HotKeys
         /// <param name="e"></param>
         public delegate void HotKeyHandler(object sender, HotKeyArgs e);
 
-        private readonly Dictionary<Keys, bool> m_hotkeystate; //Keeps track of the status of the set of Keys
+        private readonly Dictionary<Keys, bool> _mHotkeystate; //Keeps track of the status of the set of Keys
 
         /*
          * Example of m_remapping:
@@ -37,14 +37,14 @@ namespace Gma.System.MouseKeyHook.HotKeys
          * Keys primaryKey = PrimaryKeyOf( k ) = Keys.LShiftKey
          * m_hotkeystate[ primaryKey ] = true/false
          */
-        private readonly Dictionary<Keys, Keys> m_remapping; //Used for mapping multiple keys to a single key
+        private readonly Dictionary<Keys, Keys> _mRemapping; //Used for mapping multiple keys to a single key
 
-        private bool m_enabled = true; //enabled by default
+        private bool _mEnabled = true; //enabled by default
 
         //These provide the actual status of whether a set is truly activated or not.
-        private int m_hotkeydowncount; //number of hot keys down
+        private int _mHotkeydowncount; //number of hot keys down
 
-        private int m_remappingCount;
+        private int _mRemappingCount;
         //the number of remappings, i.e., a set of mappings, not the individual count in m_remapping
 
         /// <summary>
@@ -53,8 +53,8 @@ namespace Gma.System.MouseKeyHook.HotKeys
         /// <param name="hotkeys">Set of Hot Keys</param>
         public HotKeySet(IEnumerable<Keys> hotkeys)
         {
-            m_hotkeystate = new Dictionary<Keys, bool>();
-            m_remapping = new Dictionary<Keys, Keys>();
+            _mHotkeystate = new Dictionary<Keys, bool>();
+            _mRemapping = new Dictionary<Keys, Keys>();
             HotKeys = hotkeys;
             InitializeKeys();
         }
@@ -79,7 +79,7 @@ namespace Gma.System.MouseKeyHook.HotKeys
         /// </summary>
         public bool HotKeysActivated
         {
-            get { return m_hotkeydowncount == m_hotkeystate.Count - m_remappingCount; }
+            get { return _mHotkeydowncount == _mHotkeystate.Count - _mRemappingCount; }
         }
 
         /// <summary>
@@ -87,13 +87,13 @@ namespace Gma.System.MouseKeyHook.HotKeys
         /// </summary>
         public bool Enabled
         {
-            get { return m_enabled; }
+            get { return _mEnabled; }
             set
             {
                 if (value)
                     InitializeKeys(); //must get the actual current state of each key to update
 
-                m_enabled = value;
+                _mEnabled = value;
             }
         }
 
@@ -134,11 +134,11 @@ namespace Gma.System.MouseKeyHook.HotKeys
         {
             foreach (var k in HotKeys)
             {
-                if (m_hotkeystate.ContainsKey(k))
-                    m_hotkeystate.Add(k, false);
+                if (_mHotkeystate.ContainsKey(k))
+                    _mHotkeystate.Add(k, false);
 
                 //assign using the current state of the keyboard
-                m_hotkeystate[k] = KeyboardState.GetCurrent().IsDown(k);
+                _mHotkeystate[k] = KeyboardState.GetCurrent().IsDown(k);
             }
         }
 
@@ -154,19 +154,19 @@ namespace Gma.System.MouseKeyHook.HotKeys
         {
             var primaryKey = GetExclusiveOrPrimaryKey(anyKeyInTheExclusiveOrSet);
 
-            if (primaryKey == Keys.None || !m_remapping.ContainsValue(primaryKey))
+            if (primaryKey == Keys.None || !_mRemapping.ContainsValue(primaryKey))
                 return false;
 
             var keystoremove = new List<Keys>();
 
-            foreach (var pair in m_remapping)
+            foreach (var pair in _mRemapping)
                 if (pair.Value == primaryKey)
                     keystoremove.Add(pair.Key);
 
             foreach (var k in keystoremove)
-                m_remapping.Remove(k);
+                _mRemapping.Remove(k);
 
-            --m_remappingCount;
+            --_mRemappingCount;
 
             return true;
         }
@@ -187,7 +187,7 @@ namespace Gma.System.MouseKeyHook.HotKeys
         {
             //Verification first, so as to not leave the m_remapping with a partial set.
             foreach (var k in orKeySet)
-                if (!m_hotkeystate.ContainsKey(k))
+                if (!_mHotkeystate.ContainsKey(k))
                     return Keys.None;
 
             var i = 0;
@@ -199,13 +199,13 @@ namespace Gma.System.MouseKeyHook.HotKeys
                 if (i == 0)
                     primaryKey = k;
 
-                m_remapping[k] = primaryKey;
+                _mRemapping[k] = primaryKey;
 
                 ++i;
             }
 
             //Must increase to keep a true count of how many keys are necessary for the activation to be true
-            ++m_remappingCount;
+            ++_mRemappingCount;
 
             return primaryKey;
         }
@@ -217,7 +217,7 @@ namespace Gma.System.MouseKeyHook.HotKeys
         /// <returns>The primary key if it exists, otherwise Keys.None</returns>
         private Keys GetExclusiveOrPrimaryKey(Keys k)
         {
-            return m_remapping.ContainsKey(k) ? m_remapping[k] : Keys.None;
+            return _mRemapping.ContainsKey(k) ? _mRemapping[k] : Keys.None;
         }
 
         /// <summary>
@@ -228,7 +228,7 @@ namespace Gma.System.MouseKeyHook.HotKeys
         private Keys GetPrimaryKey(Keys k)
         {
             //If the key is remapped then get the primary keys
-            return m_remapping.ContainsKey(k) ? m_remapping[k] : k;
+            return _mRemapping.ContainsKey(k) ? _mRemapping[k] : k;
         }
 
         /// <summary>
@@ -257,10 +257,10 @@ namespace Gma.System.MouseKeyHook.HotKeys
             }
 
             //indicates the key's state is current false but the key is now down
-            else if (m_hotkeystate.ContainsKey(k) && !m_hotkeystate[k])
+            else if (_mHotkeystate.ContainsKey(k) && !_mHotkeystate[k])
             {
-                m_hotkeystate[k] = true; //key's state is down
-                ++m_hotkeydowncount; //increase the number of keys down in this set
+                _mHotkeystate[k] = true; //key's state is down
+                ++_mHotkeydowncount; //increase the number of keys down in this set
 
                 if (HotKeysActivated) //because of the increase, check whether the set is activated
                     InvokeHotKeyHandler(OnHotKeysDownOnce); //Call the initial event
@@ -269,12 +269,12 @@ namespace Gma.System.MouseKeyHook.HotKeys
 
         private void OnKeyUp(Keys k)
         {
-            if (m_hotkeystate.ContainsKey(k) && m_hotkeystate[k]) //indicates the key's state was down but now it's up
+            if (_mHotkeystate.ContainsKey(k) && _mHotkeystate[k]) //indicates the key's state was down but now it's up
             {
                 var wasActive = HotKeysActivated;
 
-                m_hotkeystate[k] = false; //key's state is up
-                --m_hotkeydowncount; //this set is no longer ready
+                _mHotkeystate[k] = false; //key's state is up
+                --_mHotkeydowncount; //this set is no longer ready
 
                 if (wasActive)
                     InvokeHotKeyHandler(OnHotKeysUp); //call the KeyUp event because the set is no longer active

@@ -11,7 +11,7 @@ namespace Gma.System.MouseKeyHook.HotKeys
     /// </summary>
     public sealed class HotKeySetCollection : List<HotKeySet>
     {
-        private KeyChainHandler m_keyChain;
+        private KeyChainHandler _mKeyChain;
 
         /// <summary>
         ///     Adds a HotKeySet to the collection.
@@ -19,7 +19,7 @@ namespace Gma.System.MouseKeyHook.HotKeys
         /// <param name="hks"></param>
         public new void Add(HotKeySet hks)
         {
-            m_keyChain += hks.OnKey;
+            _mKeyChain += hks.OnKey;
             base.Add(hks);
         }
 
@@ -29,7 +29,7 @@ namespace Gma.System.MouseKeyHook.HotKeys
         /// <param name="hks"></param>
         public new void Remove(HotKeySet hks)
         {
-            m_keyChain -= hks.OnKey;
+            _mKeyChain -= hks.OnKey;
             base.Remove(hks);
         }
 
@@ -39,8 +39,8 @@ namespace Gma.System.MouseKeyHook.HotKeys
         /// <param name="e"></param>
         internal void OnKey(KeyEventArgsExt e)
         {
-            if (m_keyChain != null)
-                m_keyChain(e);
+            if (_mKeyChain != null)
+                _mKeyChain(e);
         }
 
         private delegate void KeyChainHandler(KeyEventArgsExt kex);

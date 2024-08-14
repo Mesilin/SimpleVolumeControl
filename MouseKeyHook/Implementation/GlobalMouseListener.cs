@@ -10,19 +10,19 @@ namespace Gma.System.MouseKeyHook.Implementation
 {
     internal class GlobalMouseListener : MouseListener
     {
-        private readonly int m_SystemDoubleClickTime;
-        private readonly int m_xDoubleClickThreshold;
-        private readonly int m_yDoubleClickThreshold;
-        private MouseButtons m_PreviousClicked;
-        private Point m_PreviousClickedPosition;
-        private int m_PreviousClickedTime;
+        private readonly int _mSystemDoubleClickTime;
+        private readonly int _mXDoubleClickThreshold;
+        private readonly int _mYDoubleClickThreshold;
+        private MouseButtons _mPreviousClicked;
+        private Point _mPreviousClickedPosition;
+        private int _mPreviousClickedTime;
 
         public GlobalMouseListener()
             : base(HookHelper.HookGlobalMouse)
         {
-            m_SystemDoubleClickTime = MouseNativeMethods.GetDoubleClickTime();
-            m_xDoubleClickThreshold = NativeMethods.GetXDoubleClickThreshold();
-            m_yDoubleClickThreshold = NativeMethods.GetYDoubleClickThreshold();
+            _mSystemDoubleClickTime = MouseNativeMethods.GetDoubleClickTime();
+            _mXDoubleClickThreshold = NativeMethods.GetXDoubleClickThreshold();
+            _mYDoubleClickThreshold = NativeMethods.GetYDoubleClickThreshold();
         }
 
         protected override void ProcessDown(ref MouseEventExtArgs e)
@@ -43,28 +43,28 @@ namespace Gma.System.MouseKeyHook.Implementation
 
         private void StartDoubleClickWaiting(MouseEventExtArgs e)
         {
-            m_PreviousClicked = e.Button;
-            m_PreviousClickedTime = e.Timestamp;
-            m_PreviousClickedPosition = e.Point;
+            _mPreviousClicked = e.Button;
+            _mPreviousClickedTime = e.Timestamp;
+            _mPreviousClickedPosition = e.Point;
         }
 
         private void StopDoubleClickWaiting()
         {
-            m_PreviousClicked = MouseButtons.None;
-            m_PreviousClickedTime = 0;
-            m_PreviousClickedPosition = m_UninitialisedPoint;
+            _mPreviousClicked = MouseButtons.None;
+            _mPreviousClickedTime = 0;
+            _mPreviousClickedPosition = MUninitialisedPoint;
         }
 
         private bool IsDoubleClick(MouseEventExtArgs e)
         {
-            var isXMoving = Math.Abs(e.Point.X - m_PreviousClickedPosition.X) > m_xDoubleClickThreshold;
-            var isYMoving = Math.Abs(e.Point.Y - m_PreviousClickedPosition.Y) > m_yDoubleClickThreshold;
+            var isXMoving = Math.Abs(e.Point.X - _mPreviousClickedPosition.X) > _mXDoubleClickThreshold;
+            var isYMoving = Math.Abs(e.Point.Y - _mPreviousClickedPosition.Y) > _mYDoubleClickThreshold;
 
             return
-                e.Button == m_PreviousClicked &&
+                e.Button == _mPreviousClicked &&
                 !isXMoving &&
                 !isYMoving &&
-                e.Timestamp - m_PreviousClickedTime <= m_SystemDoubleClickTime;
+                e.Timestamp - _mPreviousClickedTime <= _mSystemDoubleClickTime;
         }
 
         protected override MouseEventExtArgs GetEventArgs(CallbackData data)

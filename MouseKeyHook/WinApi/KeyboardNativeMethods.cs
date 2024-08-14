@@ -13,35 +13,35 @@ namespace Gma.System.MouseKeyHook.WinApi
     internal static class KeyboardNativeMethods
     {
         //values from Winuser.h in Microsoft SDK.
-        public const byte VK_SHIFT = 0x10;
+        public const byte Shift = 0x10;
 
-        public const byte VK_CAPITAL = 0x14;
-        public const byte VK_NUMLOCK = 0x90;
-        public const byte VK_LSHIFT = 0xA0;
-        public const byte VK_RSHIFT = 0xA1;
-        public const byte VK_LCONTROL = 0xA2;
-        public const byte VK_RCONTROL = 0xA3;
-        public const byte VK_LMENU = 0xA4;
-        public const byte VK_RMENU = 0xA5;
-        public const byte VK_LWIN = 0x5B;
-        public const byte VK_RWIN = 0x5C;
-        public const byte VK_SCROLL = 0x91;
+        public const byte Capital = 0x14;
+        public const byte Numlock = 0x90;
+        public const byte Lshift = 0xA0;
+        public const byte Rshift = 0xA1;
+        public const byte Lcontrol = 0xA2;
+        public const byte Rcontrol = 0xA3;
+        public const byte Lmenu = 0xA4;
+        public const byte Rmenu = 0xA5;
+        public const byte Lwin = 0x5B;
+        public const byte Rwin = 0x5C;
+        public const byte Scroll = 0x91;
 
-        public const byte VK_INSERT = 0x2D;
+        public const byte Insert = 0x2D;
 
         //may be possible to use these aggregates instead of L and R separately (untested)
-        public const byte VK_CONTROL = 0x11;
+        public const byte Control = 0x11;
 
-        public const byte VK_MENU = 0x12;
+        public const byte Menu = 0x12;
 
-        public const byte VK_PACKET = 0xE7;
+        public const byte Packet = 0xE7;
 
         //Used to pass Unicode characters as if they were keystrokes. The VK_PACKET key is the low word of a 32-bit Virtual Key value used for non-keyboard input methods
-        private static int lastVirtualKeyCode;
+        private static int _lastVirtualKeyCode;
 
-        private static int lastScanCode;
-        private static byte[] lastKeyState = new byte[255];
-        private static bool lastIsDead;
+        private static int _lastScanCode;
+        private static byte[] _lastKeyState = new byte[255];
+        private static bool _lastIsDead;
 
         /// <summary>
         ///     Translates a virtual key to its character equivalent using the current keyboard layout without knowing the
@@ -54,7 +54,7 @@ namespace Gma.System.MouseKeyHook.WinApi
         internal static void TryGetCharFromKeyboardState(int virtualKeyCode, int fuState, out char[] chars)
         {
             var dwhkl = GetActiveKeyboard();
-            var scanCode = MapVirtualKeyEx(virtualKeyCode, (int) MapType.MAPVK_VK_TO_VSC, dwhkl);
+            var scanCode = MapVirtualKeyEx(virtualKeyCode, (int) MapType.MapvkVkToVsc, dwhkl);
             TryGetCharFromKeyboardState(virtualKeyCode, scanCode, fuState, dwhkl, out chars);
         }
 
@@ -123,23 +123,23 @@ namespace Gma.System.MouseKeyHook.WinApi
                     break;
             }
 
-            if (lastVirtualKeyCode != 0 && lastIsDead)
+            if (_lastVirtualKeyCode != 0 && _lastIsDead)
             {
                 if (chars != null)
                 {
                     var sbTemp = new StringBuilder(5);
-                    ToUnicodeEx(lastVirtualKeyCode, lastScanCode, lastKeyState, sbTemp, sbTemp.Capacity, 0, dwhkl);
-                    lastIsDead = false;
-                    lastVirtualKeyCode = 0;
+                    ToUnicodeEx(_lastVirtualKeyCode, _lastScanCode, _lastKeyState, sbTemp, sbTemp.Capacity, 0, dwhkl);
+                    _lastIsDead = false;
+                    _lastVirtualKeyCode = 0;
                 }
 
                 return;
             }
 
-            lastScanCode = scanCode;
-            lastVirtualKeyCode = virtualKeyCode;
-            lastIsDead = isDead;
-            lastKeyState = (byte[]) currentKeyboardState.Clone();
+            _lastScanCode = scanCode;
+            _lastVirtualKeyCode = virtualKeyCode;
+            _lastIsDead = isDead;
+            _lastKeyState = (byte[]) currentKeyboardState.Clone();
         }
 
 
@@ -351,26 +351,26 @@ namespace Gma.System.MouseKeyHook.WinApi
             ///     value. Dead keys (diacritics) are indicated by setting the top bit of the return value. If there is no translation,
             ///     the function returns 0.
             /// </summary>
-            MAPVK_VK_TO_VSC,
+            MapvkVkToVsc,
 
             /// <summary>
             ///     uCode is a virtual-key code and is translated into a scan code. If it is a virtual-key code that does not
             ///     distinguish between left- and right-hand keys, the left-hand scan code is returned. If there is no translation, the
             ///     function returns 0.
             /// </summary>
-            MAPVK_VSC_TO_VK,
+            MapvkVscToVk,
 
             /// <summary>
             ///     uCode is a scan code and is translated into a virtual-key code that does not distinguish between left- and
             ///     right-hand keys. If there is no translation, the function returns 0.
             /// </summary>
-            MAPVK_VK_TO_CHAR,
+            MapvkVkToChar,
 
             /// <summary>
             ///     uCode is a scan code and is translated into a virtual-key code that distinguishes between left- and right-hand
             ///     keys. If there is no translation, the function returns 0.
             /// </summary>
-            MAPVK_VSC_TO_VK_EX
+            MapvkVscToVkEx
         }
     }
 }

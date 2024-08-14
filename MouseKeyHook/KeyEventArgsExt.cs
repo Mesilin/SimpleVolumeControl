@@ -105,8 +105,8 @@ namespace Gma.System.MouseKeyHook
             var keyData = AppendModifierStates((Keys) keyboardHookStruct.VirtualKeyCode);
 
             var keyCode = (int) wParam;
-            var isKeyDown = keyCode == Messages.WM_KEYDOWN || keyCode == Messages.WM_SYSKEYDOWN;
-            var isKeyUp = keyCode == Messages.WM_KEYUP || keyCode == Messages.WM_SYSKEYUP;
+            var isKeyDown = keyCode == Messages.Keydown || keyCode == Messages.Syskeydown;
+            var isKeyUp = keyCode == Messages.Keyup || keyCode == Messages.Syskeyup;
 
             const uint maskExtendedKey = 0x1;
             var isExtendedKey = (keyboardHookStruct.Flags & maskExtendedKey) > 0;
@@ -129,11 +129,11 @@ namespace Gma.System.MouseKeyHook
         private static Keys AppendModifierStates(Keys keyData)
         {
             // Is Control being held down?
-            var control = CheckModifier(KeyboardNativeMethods.VK_CONTROL);
+            var control = CheckModifier(KeyboardNativeMethods.Control);
             // Is Shift being held down?
-            var shift = CheckModifier(KeyboardNativeMethods.VK_SHIFT);
+            var shift = CheckModifier(KeyboardNativeMethods.Shift);
             // Is Alt being held down?
-            var alt = CheckModifier(KeyboardNativeMethods.VK_MENU);
+            var alt = CheckModifier(KeyboardNativeMethods.Menu);
 
             // Windows keys
             // # combine LWin and RWin key with other keys will potentially corrupt the data
