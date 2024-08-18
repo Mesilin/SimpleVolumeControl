@@ -18,16 +18,17 @@ namespace VolumeControl
             InitializeComponent();
             var fileVersionInfo = FileVersionInfo.GetVersionInfo(Application.ExecutablePath);
 
-            Text= $"SimpleVolumeControl v. {fileVersionInfo.FileVersion} - Настройки";
+            Text = $"SimpleVolumeControl v. {fileVersionInfo.FileVersion} - Настройки";
             AutoRunCheckBox.Checked = Properties.Settings.Default.AutoRun;
             MuteOnScrollLockCheckBox.Checked = Properties.Settings.Default.MuteOnScrollLock;
+            IsAlternativeVolumeControlCheckBox.Checked = Properties.Settings.Default.IsAlternativeVolumeControl;
 
             notifyIcon1.ContextMenuStrip = contextMenuStrip1;
             showToolStripMenuItem.Click += ShowToolStripMenuItem_Click;
             exitToolStripMenuItem.Click += ExitToolStripMenuItem_Click;
 
         }
-        
+
         private bool _allowVisible;     // ContextMenu's Show command used
         private bool _allowClose;       // ContextMenu's Exit command used
 
@@ -109,6 +110,7 @@ namespace VolumeControl
         private void SaveButton_Click(object sender, EventArgs e)
         {
             Properties.Settings.Default.MuteOnScrollLock = MuteOnScrollLockCheckBox.Checked;
+            Properties.Settings.Default.IsAlternativeVolumeControl = IsAlternativeVolumeControlCheckBox.Checked;
             Properties.Settings.Default.AutoRun = AutoRunCheckBox.Checked;
             if (Properties.Settings.Default.AutoRun)
                 CreateTask();
@@ -128,6 +130,16 @@ namespace VolumeControl
         {
             _allowVisible = true;
             Show();
+        }
+
+        private void AutoRunCheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void IsAlternativeVolumeControlCheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -40,6 +40,7 @@
             CancelButton_ = new System.Windows.Forms.Button();
             textBox1 = new System.Windows.Forms.TextBox();
             label1 = new System.Windows.Forms.Label();
+            IsAlternativeVolumeControlCheckBox = new System.Windows.Forms.CheckBox();
             contextMenuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -50,25 +51,26 @@
             // 
             // contextMenuStrip1
             // 
-            resources.ApplyResources(contextMenuStrip1, "contextMenuStrip1");
             contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] { showToolStripMenuItem, exitToolStripMenuItem });
             contextMenuStrip1.Name = "contextMenuStrip1";
+            resources.ApplyResources(contextMenuStrip1, "contextMenuStrip1");
             // 
             // showToolStripMenuItem
             // 
-            resources.ApplyResources(showToolStripMenuItem, "showToolStripMenuItem");
             showToolStripMenuItem.Name = "showToolStripMenuItem";
+            resources.ApplyResources(showToolStripMenuItem, "showToolStripMenuItem");
             // 
             // exitToolStripMenuItem
             // 
-            resources.ApplyResources(exitToolStripMenuItem, "exitToolStripMenuItem");
             exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            resources.ApplyResources(exitToolStripMenuItem, "exitToolStripMenuItem");
             // 
             // AutoRunCheckBox
             // 
             resources.ApplyResources(AutoRunCheckBox, "AutoRunCheckBox");
             AutoRunCheckBox.Name = "AutoRunCheckBox";
             AutoRunCheckBox.UseVisualStyleBackColor = true;
+            AutoRunCheckBox.CheckedChanged += AutoRunCheckBox_CheckedChanged;
             // 
             // MuteOnScrollLockCheckBox
             // 
@@ -92,10 +94,10 @@
             // 
             // textBox1
             // 
-            resources.ApplyResources(textBox1, "textBox1");
             textBox1.BackColor = System.Drawing.SystemColors.ButtonFace;
             textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             textBox1.ForeColor = System.Drawing.Color.FromArgb(0, 0, 64);
+            resources.ApplyResources(textBox1, "textBox1");
             textBox1.Name = "textBox1";
             // 
             // label1
@@ -104,10 +106,18 @@
             label1.ForeColor = System.Drawing.SystemColors.ButtonShadow;
             label1.Name = "label1";
             // 
+            // IsAlternativeVolumeControlCheckBox
+            // 
+            resources.ApplyResources(IsAlternativeVolumeControlCheckBox, "IsAlternativeVolumeControlCheckBox");
+            IsAlternativeVolumeControlCheckBox.Name = "IsAlternativeVolumeControlCheckBox";
+            IsAlternativeVolumeControlCheckBox.UseVisualStyleBackColor = true;
+            IsAlternativeVolumeControlCheckBox.CheckedChanged += IsAlternativeVolumeControlCheckBox_CheckedChanged;
+            // 
             // SettingsForm2
             // 
             resources.ApplyResources(this, "$this");
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            Controls.Add(IsAlternativeVolumeControlCheckBox);
             Controls.Add(label1);
             Controls.Add(textBox1);
             Controls.Add(CancelButton_);
@@ -134,5 +144,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ToolStripMenuItem showToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
+        private System.Windows.Forms.CheckBox IsAlternativeVolumeControlCheckBox;
     }
 }

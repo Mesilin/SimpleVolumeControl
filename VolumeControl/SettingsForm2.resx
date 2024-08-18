@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!--
-    Microsoft ResX Schema 
+    Microsoft ResX Schema
 
     Version 2.0
 
@@ -48,7 +48,7 @@
     value   : The object must be serialized with
             : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
             : and then encoded with base64 encoding.
-    
+
     mimetype: application/x-microsoft.net.object.soap.base64
     value   : The object must be serialized with
             : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
@@ -117,13 +117,527 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <metadata name="notifyIcon1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="notifyIcon1.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAQEAAAAEAIAAoQgAAFgAAACgAAABAAAAAgAAAAAEAIAAAAAAAAEAAABx2AAAcdgAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAP4Aow7+AKZI/gCmfP4Ap6f+AKvJ/gCr4/4ArfT+AK/9/gCx/P4AsvT+ALTj/gC1yv4A
+        t6f+ALl8/gC7SP8Auw8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAD+AKAb/gCfc/4AosP+AKP7/wCl//8Ap///AKn//wCq//8ArP//AK7//wCv//8A
+        sf//ALP//wC0//8Atv//ALf//wC5//8Au//+ALv7/gC9w/4AwHP+AL8cAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8AmUT+AJyz/gCe/P8Aof//AKL//wCk//8Apf//AKf//wCp//8A
+        qv//AKz//wCu//8Ar///ALH//wCz//8AtP//ALb//wC3//8Auf//ALv//wC8//8Avv//AMD//gDB/P4A
+        w7P/AMNEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/gCYQf4Amsj/AJz//wCd//8An///AKH//wCi//8A
+        pP//AKX//wCn//8Aqf//AKr//wCs//8Arv//AK///wCx//8As///ALT//wC2//8At///ALn//wC7//8A
+        vP//AL7//wDA//8Awf//AMP//wDF//4Axcn+AMhCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+AJcb/gCWrf8AmP//AJr//wCc//8A
+        nf//AJ///wCh//8Aov//AKT//wCl//8Ap///AKn//wCq//8ArP//AK7//wCv//8Asf//ALP//wC0//8A
+        tv//ALf//wC5//8Au///ALz//wC+//8AwP//AMH//wDD//8Axf//AMb//wDI//4Aya3+AMgcAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+AJJc/wCU8P8A
+        l///AJj//wCa//8AnP//AJ3//wCf//8Aof//AKL//wCk//8Apf//AKf//wCp//8Aqv//AKz//wCu//8A
+        r///ALH//wCz//8AtP//ALb//wC3//8Auf//ALv//wC8//8Avv//AMD//wDB//8Aw///AMX//wDG//8A
+        yP//AMn//wDK8P4AzVwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP4A
+        kQf+AJKb/wCU//8Alf//AJf//wCY//8Amv//AJz//wCd//8An///AKH//wCi//8ApP//AKX//wCn//8A
+        qf//AKr//wCs//8Arv//AK///wCx//8As///ALT//wC2//8At///ALn//wC7//8AvP//AL7//wDA//8A
+        wf//AMP//wDF//8Axv//AMj//wDJ//8Ay///AM3//gDNnP4A2gcAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAP4AjRL+AJDC/wCS//8AlP//AJX//wCX//8AmP//AJr//wCc//8Anf//AJ///wCh//8A
+        ov//AKT//wCl//8Ap///AKn//wCq//8ArP//AK7//wCv//8Asf//ALP//wC0//8Atv//ALf//wC5//8A
+        u///ALz//wC+//8AwP//AMH//wDD//8Axf//AMb//wDI//8Ayf//AMv//wDN//8Azv/+AM/D/gDUEgAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAP4AkBf+AI7S/wCQ//8Akv//AJT//wCV//8Al///AJj//wCa//8A
+        nP//AJ3//wCf//8Aof//AKL//wCk//8Apf//AKf//wCp//8Aqv//AKz//wCu//8Ar///ALH//wCz//8A
+        tP//ALb//wC3//8Auf//ALv//wC8//8Avv//AMD//wDB//8Aw///AMX//wDG//8AyP//AMn//wDL//8A
+        zf//AM7//wDQ//4A0dP+ANIXAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP4AjRL+AIzS/wCP//8AkP//AJL//wCU//8A
+        lf//AJf//wCY//8Amv//AJz//wCd//8An///AKH//wCi//8ApP//AKX//wCn//8Aqf//AKr//wCs//8A
+        rv//AK///wCx//8As///ALT//wC2//8At///ALn//wC7//8AvP//AL7//wDA//8Awf//AMP//wDF//8A
+        xv//AMj//wDJ//8Ay///AM3//wDO//8A0P//ANL//gDT0v4A1BIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP4AkQf+AIrD/wCN//8A
+        j///AJD//wCS//8AlP//AJX//wCX//8AmP//AJr//wCc//8Anf//AJ///wCh//8Aov//AKT//wCl//8A
+        p///AKn//wCq//8ArP//AK7//wCv//8Asf//ALP//wC0//8Atv//ALf//wC5//8Au///ALz//wC+//8A
+        wP//AMH//wDD//8Axf//AMb//wDI//8Ayf//AMv//wDN//8Azv//AND//wDS//8A0//+ANPD/gDaBwAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAD+AImc/wCL//8Ajf//AI///wCQ//8Akv//AJT//wCV//8Al///AJj//wCa//8AnP//AJ3//wCf//8A
+        of//AKL//wCk//8Apf//AKf//wCp//8Aqv//AKz//wCu//8Ar///ALH//wCz//8AtP//ALb//wC3//8A
+        uf//ALv//wC8//8Avv//AMD//wDB//8Aw///AMX//wDG//8AyP//AMn//wDL//8Azf//AM7//wDQ//8A
+        0v//ANP//wDV//4A1ZsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAD+AIdc/wCK//8Ai///AI3//wCP//8AkP//AJL//wCU//8Alf//AJf//wCY//8A
+        mv//AJz//wCd//8An///AKH//wCi//8ApP//AKX//wCn//8Aqf//AKr//wCs//8Arv//AK///wCx//8A
+        s///ALT//wC2//8At///ALn//wC7//8AvP//AL7//wDA//8Awf//AMP//wDF//8Axv//AMj//wDJ//8A
+        y///AM3//wDO//8A0P//ANL//wDT//8A1f//ANb//gDVXAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+AIgc/wCI8P8Aiv//AIv//wCN//8Aj///AJD//wCS//8A
+        lP//AJX//wCX//8AmP//AJr//wCc//8Anf//AJ///wCh//8Aov//AKT//wCl//8Ap///AKn//wCq//8A
+        rP//AK7//wCv//8Asf//ALP//wC0//8Atv//ALf//wC5//8Au///ALz//wC+//8AwP//AMH//wDD//8A
+        xf//AMb//wDI//8Ayf//AMv//wDN//8Azv//AND//wDS//8A0///ANX//wDW//8A1/D+ANkbAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/gCGrv8AiP//AIr//wCL//8A
+        jf//AI///wCQ//8Akv//AJT//wCV//8Al///AJj//wCa//8AnP//AJ3//wCf//8Aof//AKL//wCk//8A
+        pf//AKf//wCp//8Aqv//AKz//wCu//8Ar///ALH//wCz//8AtP/+ALTc/gC2Uf4AuY//ALv//wC8//8A
+        vv//AMD//wDB//8Aw///AMX//wDG//8AyP//AMn//wDL//8Azf//AM7//wDQ//8A0v//ANP//wDV//8A
+        1v//ANj//gDarQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/gCDQv8A
+        hv//AIj//wCK//8Ai///AI3//wCP//8AkP//AJL//wCU//8Alf//AJf//wCY//8Amv//AJz//wCd//8A
+        n///AKH//wCi//8ApP//AKX//wCn//8Aqf//AKr//wCs//8Arv//AK///wCx//4Asvb+ALN9/wC/CAAA
+        AAD+ALpZ/wC7//8AvP//AL7//wDA//8Awf//AMP//wDF//8Axv//AMj//wDJ//8Ay///AM3//wDO//8A
+        0P//ANL//wDT//8A1f//ANb//wDY//8A2v/+ANhCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAP4AhMj/AIb//wCI//8Aiv//AIv//wCN//8Aj///AJD//wCS//8AlP//AJX//wCX//8A
+        mP//AJr//wCc//8Anf//AJ///wCh//8Aov//AKT//wCl//8Ap///AKn//wCq//8ArP//AK7//wCv//4A
+        sLD/ALcgAAAAAAAAAAAAAAAA/gC6Wf8Au///ALz//wC+//8AwP//AMH//wDD//8Axf//AMb//wDI//8A
+        yf//AMv//wDN//8Azv//AND//wDS//8A0///ANX//wDW//8A2P//ANr//gDbyAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8Ag0T/AIX//wCG//8AiP//AIr//wCL//8Ajf//AI///wCQ//8A
+        kv//AJT//wCV//8Al///AJj//wCa//8AnP//AJ3//wCf//8Aof//AKL//wCk//8Apf//AKf//wCp//8A
+        qv//AKz//gCt2/4Ar0oAAAAAAAAAAAAAAAAAAAAAAAAAAP4Auln/ALv//wC8//8Avv//AMD//wDB//8A
+        w///AMX//wDG//8AyP//AMn//wDL//8Azf//AM7//wDQ//8A0v//ANP//wDV//8A1v//ANj//wDa//8A
+        2///ANlEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+AIO0/wCF//8Ahv//AIj//wCK//8A
+        i///AI3//wCP//8AkP//AJL//wCU//8Alf//AJf//wCY//8Amv//AJz//wCd//8An///AKH//wCi//8A
+        pP//AKX//wCn//8Aqf/+AKn2/gCrff8AnwgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+ALpZ/wC7//8A
+        vP//AL7//wDA//8Awf//AMP//wDF//8Axv//AMj//wDJ//8Ay///AM3//wDO//8A0P//ANL//wDT//8A
+        1f//ANb//wDY//8A2v//ANv//gDcswAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+AH8c/gCD/P8A
+        hf//AIb//wCI//8Aiv//AIv//wCN//8Aj///AJD//wCS//8AlP//AJX//wCX//8AmP//AJr//wCc//8A
+        nf//AJ///wCh//8Aov//AKT//wCl//8Ap//+AKiw/wCvIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAA/gC6Wf8Au///ALz//wC+//8AwP//AMH//wDD//8Axf//AMb//gDG1v4Ayo3+AMr+/wDN//8A
+        zv//AND//wDS//8A0///ANX//wDW//8A2P//ANr//wDb//4A3fz+AOIbAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAA/gCCc/8Ag///AIX//wCG//8AiP//AIr//wCL//8Ajf//AI///wCQ//8Akv//AJT//wCV//8A
+        l///AJj//wCa//8AnP//AJ3//wCf//8Aof//AKL//wCk//4Apdv+AKdJAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAP4Auln/ALv//wC8//8Avv//AMD//wDB//8Aw///AMX//wDG//4A
+        x68AAAAA/gDMef8Azf//AM7//wDQ//8A0v//ANP//wDV//8A1v//ANj//wDa//8A2///AN3//gDdcwAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAP4AgcP/AIP//wCF//8Ahv//AIj//wCK//8Ai///AI3//wCP//8A
+        kP//AJL//wCU//8Alf//AJf//wCY//8Amv//AJz//wCd//8An///AKH//gCi9f4Ao33/AJ8IAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+ALpZ/wC7//8AvP//AL7//wDA//8A
+        wf/+AML2/gDE+/8Axv//AMj//gDJff8A/wH+AMyy/wDO//8A0P//ANL//wDT//8A1f//ANb//wDY//8A
+        2v//ANv//wDd//4A3sMAAAAAAAAAAAAAAAAAAAAAAAAAAP8Adw/+AIL7/wCD//8Ahf//AIb//wCI//8A
+        iv//AIv//wCN//8Aj///AJD//wCS//8AlP//AJX//wCX//8AmP//AJr//wCc//8Anf//AJ///gCgxf8A
+        nyAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/gC6Wf8A
+        u///ALz//wC+//8AwP//AMH//gDERv4AxEH+AMb4/wDI//4Ayf3+AMtB/gDNGv4AzvL/AND//wDS//8A
+        0///ANX//wDW//8A2P//ANr//wDb//8A3f/+AN77/gDsDgAAAAAAAAAAAAAAAAAAAAD+AH9I/wCC//8A
+        g///AIX//wCG//8AiP//AIr//wCL//8Ajf//AI///wCQ//4Aktz+AJRp/gCUPv8AlDz/AJk8/wCZPP8A
+        mTz/AJ08/gCf7f4AoIIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAP4Auln/ALv//wC8//8Avv//AMD//wDB//4Awrv/AMwF/gDGbf8AyP//AMn//gDK2f8A
+        zAX+AM6D/wDQ//8A0v//ANP//wDV//8A1v//ANj//wDa//8A2///AN3//wDf//4A30gAAAAAAAAAAAAA
+        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
+        iv//AIv//wCN//8Aj///AJD//wCS//8AlP//AJX//wCX//8AmP//AJr//wCc//8Anf//AJ///gCgxf8A
+        nyAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/gC6Wf8A
+        u///ALz//wC+//8AwP//AMH//gDBR/4AxEH+AMb4/wDI//4Ayf3+AMtB/gDNGv4AzvL/AND//wDS//8A
+        0///ANX//wDW//8A2P//ANr//wDb//8A3f/+AN77/gDaDgAAAAAAAAAAAAAAAAAAAAAAAAAA/gCAxP8A
+        g///AIX//wCG//8AiP//AIr//wCL//8Ajf//AI///wCQ//8Akv//AJT//wCV//8Al///AJj//wCa//8A
+        nP//AJ3//wCf//8Aof/+AKL1/gCjff4AtgcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAP4Auln/ALv//wC8//8Avv//AMD//wDB//4Awvf+AMT7/wDG//8AyP/+AMl9/wD/Af4A
+        zLL/AM7//wDQ//8A0v//ANP//wDV//8A1v//ANj//wDa//8A2///AN3//gDewgAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAP4AgnP/AIP//wCF//8Ahv//AIj//wCK//8Ai///AI3//wCP//8AkP//AJL//wCU//8A
+        lf//AJf//wCY//8Amv//AJz//wCd//8An///AKH//wCi//8ApP/+AKXb/gCnSQAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+ALpZ/wC7//8AvP//AL7//wDA//8Awf//AMP//wDF//8A
+        xv/+AMew/wAAAf4Aynn/AM3//wDO//8A0P//ANL//wDT//8A1f//ANb//wDY//8A2v//ANv//wDd//4A
+        33EAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+AH8c/gCD/P8Ahf//AIb//wCI//8Aiv//AIv//wCN//8A
+        j///AJD//wCS//8AlP//AJX//wCX//8AmP//AJr//wCc//8Anf//AJ///wCh//8Aov//AKT//wCl//8A
+        p//+AKmv/wCvIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/gC6Wf8Au///ALz//wC+//8A
+        wP//AMH//wDD//8Axf//AMb//gDH2P4AyY/+AMr+/wDN//8Azv//AND//wDS//8A0///ANX//wDW//8A
+        2P//ANr//wDb//4A3Pz+ANkbAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP4Ag7P/AIX//wCG//8A
+        iP//AIr//wCL//8Ajf//AI///wCQ//8Akv//AJT//wCV//8Al///AJj//wCa//8AnP//AJ3//wCf//8A
+        of//AKL//wCk//8Apf//AKf//wCp//4Aqfb+AKt9/wCfCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP4A
+        uln/ALv//wC8//8Avv//AMD//wDB//8Aw///AMX//wDG//8AyP//AMn//wDL//8Azf//AM7//wDQ//8A
+        0v//ANP//wDV//8A1v//ANj//wDa//8A2//+ANyyAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAD/AINE/wCF//8Ahv//AIj//wCK//8Ai///AI3//wCP//8AkP//AJL//wCU//8Alf//AJf//wCY//8A
+        mv//AJz//wCd//8An///AKH//wCi//8ApP//AKX//wCn//8Aqf//AKr//wCs//4Ardv+AK9KAAAAAAAA
+        AAAAAAAAAAAAAAAAAAD+ALpZ/wC7//8AvP//AL7//wDA//8Awf//AMP//wDF//8Axv//AMj//wDJ//8A
+        y///AM3//wDO//8A0P//ANL//wDT//8A1f//ANb//wDY//8A2v//ANv//gDcQgAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAP4AhMj/AIb//wCI//8Aiv//AIv//wCN//8Aj///AJD//wCS//8A
+        lP//AJX//wCX//8AmP//AJr//wCc//8Anf//AJ///wCh//8Aov//AKT//wCl//8Ap///AKn//wCq//8A
+        rP//AK7//wCv//4AsLD+ALEhAAAAAAAAAAAAAAAA/gC6Wf8Au///ALz//wC+//8AwP//AMH//wDD//8A
+        xf//AMb//wDI//8Ayf//AMv//wDN//8Azv//AND//wDS//8A0///ANX//wDW//8A2P//ANr//gDcxQAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+AIdC/wCG//8AiP//AIr//wCL//8A
+        jf//AI///wCQ//8Akv//AJT//wCV//8Al///AJj//wCa//8AnP//AJ3//wCf//8Aof//AKL//wCk//8A
+        pf//AKf//wCp//8Aqv//AKz//wCu//8Ar///ALH//gCy9v4As33/AL8IAAAAAP4Auln/ALv//wC8//8A
+        vv//AMD//wDB//8Aw///AMX//wDG//8AyP//AMn//wDL//8Azf//AM7//wDQ//8A0v//ANP//wDV//8A
+        1v//ANj//wDZ//4A2j8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP4A
+        hq7/AIj//wCK//8Ai///AI3//wCP//8AkP//AJL//wCU//8Alf//AJf//wCY//8Amv//AJz//wCd//8A
+        n///AKH//wCi//8ApP//AKX//wCn//8Aqf//AKr//wCs//8Arv//AK///wCx//8As///ALT//gC03P4A
+        tlH+ALmP/wC7//8AvP//AL7//wDA//8Awf//AMP//wDF//8Axv//AMj//wDJ//8Ay///AM3//wDO//8A
+        0P//ANL//wDT//8A1f//ANb//wDY//8A2aoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAD+AIgc/wCI8P8Aiv//AIv//wCN//8Aj///AJD//wCS//8AlP//AJX//wCX//8A
+        mP//AJr//wCc//8Anf//AJ///wCh//8Aov//AKT//wCl//8Ap///AKn//wCq//8ArP//AK7//wCv//8A
+        sf//ALP//wC0//8Atv//ALf//wC5//8Au///ALz//wC+//8AwP//AMH//wDD//8Axf//AMb//wDI//8A
+        yf//AMv//wDN//8Azv//AND//wDS//8A0///ANX//wDW//4A2O7+ANYZAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP4Ahl3/AIr//wCL//8Ajf//AI///wCQ//8A
+        kv//AJT//wCV//8Al///AJj//wCa//8AnP//AJ3//wCf//8Aof//AKL//wCk//8Apf//AKf//wCp//8A
+        qv//AKz//wCu//8Ar///ALH//wCz//8AtP//ALb//wC3//8Auf//ALv//wC8//8Avv//AMD//wDB//8A
+        w///AMX//wDG//8AyP//AMn//wDL//8Azf//AM7//wDQ//8A0v//ANP//wDV//8A1v/+ANhXAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/gCJnP8A
+        i///AI3//wCP//8AkP//AJL//wCU//8Alf//AJf//wCY//8Amv//AJz//wCd//8An///AKH//wCi//8A
+        pP//AKX//wCn//8Aqf//AKr//wCs//8Arv//AK///wCx//8As///ALT//wC2//8At///ALn//wC7//8A
+        vP//AL7//wDA//8Awf//AMP//wDF//8Axv//AMj//wDJ//8Ay///AM3//wDO//8A0P//ANL//wDT//8A
+        1f/+ANaWAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAP4AkQf+AIvD/wCN//8Aj///AJD//wCS//8AlP//AJX//wCX//8AmP//AJr//wCc//8A
+        nf//AJ///wCh//8Aov//AKT//wCl//8Ap///AKn//wCq//8ArP//AK7//wCv//8Asf//ALP//wC0//8A
+        tv//ALf//wC5//8Au///ALz//wC+//8AwP//AMH//wDD//8Axf//AMb//wDI//8Ayf//AMv//wDN//8A
+        zv//AND//wDS//8A0//+ANW+/wDUBgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/gCNEv4AjdP/AI///wCQ//8Akv//AJT//wCV//8A
+        l///AJj//wCa//8AnP//AJ3//wCf//8Aof//AKL//wCk//8Apf//AKf//wCp//8Aqv//AKz//wCu//8A
+        r///ALH//wCz//8AtP//ALb//wC3//8Auf//ALv//wC8//8Avv//AMD//wDB//8Aw///AMX//wDG//8A
+        yP//AMn//wDL//8Azf//AM7//wDQ//8A0v/+ANPO/wDPEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+AJAX/gCP0v8A
+        kP//AJL//wCU//8Alf//AJf//wCY//8Amv//AJz//wCd//8An///AKH//wCi//8ApP//AKX//wCn//8A
+        qf//AKr//wCs//8Arv//AK///wCx//8As///ALT//wC2//8At///ALn//wC7//8AvP//AL7//wDA//8A
+        wf//AMP//wDF//8Axv//AMj//wDJ//8Ay///AM3//wDO//8A0P/+ANHP/gDOFQAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAP4AjRL+AI/D/wCS//8AlP//AJX//wCX//8AmP//AJr//wCc//8Anf//AJ///wCh//8A
+        ov//AKT//wCl//8Ap///AKn//wCq//8ArP//AK7//wCv//8Asf//ALP//wC0//8Atv//ALf//wC5//8A
+        u///ALz//wC+//8AwP//AMH//wDD//8Axf//AMb//wDI//8Ayf//AMv//wDN//8Azv/+ANC+/wDPEAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/gCRB/4Akpv/AJT//wCV//8Al///AJj//wCa//8A
+        nP//AJ3//wCf//8Aof//AKL//wCk//8Apf//AKf//wCp//8Aqv//AKz//wCu//8Ar///ALH//wCz//8A
+        tP//ALb//wC3//8Auf//ALv//wC8//8Avv//AMD//wDB//8Aw///AMX//wDG//8AyP//AMn//wDL//8A
+        zP/+AM6X/wDUBgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/gCSXP8A
+        lPD/AJf//wCY//8Amv//AJz//wCd//8An///AKH//wCi//8ApP//AKX//wCn//8Aqf//AKr//wCs//8A
+        rv//AK///wCx//8As///ALT//wC2//8At///ALn//wC7//8AvP//AL7//wDA//8Awf//AMP//wDF//8A
+        xv//AMj//wDJ//4Ay+7+AMpYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAD+AJcb/gCWrf8AmP//AJr//wCc//8Anf//AJ///wCh//8Aov//AKT//wCl//8A
+        p///AKn//wCq//8ArP//AK7//wCv//8Asf//ALP//wC0//8Atv//ALf//wC5//8Au///ALz//wC+//8A
+        wP//AMH//wDD//8Axf//AMb//wDH//4Ayav+AMQaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+AJZC/gCayP8AnP//AJ3//wCf//8A
+        of//AKL//wCk//8Apf//AKf//wCp//8Aqv//AKz//wCu//8Ar///ALH//wCz//8AtP//ALb//wC3//8A
+        uf//ALv//wC8//8Avv//AMD//wDB//8Aw///AMX//gDGxv8Ax0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAD/AJlE/gCes/4Anvz/AKH//wCi//8ApP//AKX//wCn//8Aqf//AKr//wCs//8Arv//AK///wCx//8A
+        s///ALT//wC2//8At///ALn//wC7//8AvP//AL7//wDA//4Awfz+AMKy/gDCQwAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+AJoc/gChc/4AosP+AKL8/wCl//8Ap///AKn//wCq//8A
+        rP//AK7//wCv//8Asf//ALP//wC0//8Atv//ALf//wC5//8Au//+ALv7/gC9w/4AwHL+AMYbAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wCqD/4A
+        pkj+AKd9/gCoqP4Aqsr+AKvj/gCt9P4Ar/3+ALH9/gCx9f4AtOT+ALXK/gC3qP4At33+ALxJ/wC7DwAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAA/////////////////////////wAA///////4AAAf/////+AAAAf/////gAAAAf////4AAAAA
+        f////AAAAAA////wAAAAAA///+AAAAAAB///wAAAAAAD//+AAAAAAAH//wAAAAAAAP//AAAAAAAA//4A
+        AAAAAAB//AAAAAAAAD/8AAAAAAAAP/gAAAAIAAAf+AAAADgAAB/wAAAA+AAAD/AAAAH4AAAP4AAAB/gA
+        AAfgAAAf+AEAB+AAAD/4AAAHwAAA//gAAAPAAAH/+AAAA8AD+f/4AAADwAf5//gAIAPAB/n/+AAAA8AP
+        +f/4AgADwA/5//gAAAPAD/n/+CAAA8AP+f/4IAADwA/5//gAAAPAD/n/+AIAA8AH+f/4AAADwAf5//gA
+        IAPAA/n/+AAAA8AAAf/4AAADwAAA//gAAAPgAAA/+AAAB+AAAB/4AAAH4AAAB/gAAAfwAAAB+AAAD/AA
+        AAD4AAAP+AAAADgAAB/4AAAACAAAH/wAAAAAAAA//AAAAAAAAD/+AAAAAAAAf/8AAAAAAAD//wAAAAAA
+        AP//gAAAAAAB///AAAAAAAP//+AAAAAAB///8AAAAAAP///8AAAAAD////4AAAAAf////4AAAAH/////
+        4AAAB//////4AAAf//////8AAP////////////////////////8=
+</value>
+  </data>
+  <data name="notifyIcon1.Text" xml:space="preserve">
+    <value>Программа для регулировки звука с помощью колеса мыши</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="notifyIcon1.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <metadata name="contextMenuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>130, 17</value>
+  </metadata>
+  <data name="showToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>134, 22</value>
+  </data>
+  <data name="showToolStripMenuItem.Text" xml:space="preserve">
+    <value>Настройки</value>
+  </data>
+  <data name="exitToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>134, 22</value>
+  </data>
+  <data name="exitToolStripMenuItem.Text" xml:space="preserve">
+    <value>Выход</value>
+  </data>
+  <data name="contextMenuStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>135, 48</value>
+  </data>
+  <data name="&gt;&gt;contextMenuStrip1.Name" xml:space="preserve">
+    <value>contextMenuStrip1</value>
+  </data>
+  <data name="&gt;&gt;contextMenuStrip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="AutoRunCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="AutoRunCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 96</value>
+  </data>
+  <data name="AutoRunCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>195, 19</value>
+  </data>
+  <data name="AutoRunCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="AutoRunCheckBox.Text" xml:space="preserve">
+    <value>Запускать при старте Windows</value>
+  </data>
+  <data name="&gt;&gt;AutoRunCheckBox.Name" xml:space="preserve">
+    <value>AutoRunCheckBox</value>
+  </data>
+  <data name="&gt;&gt;AutoRunCheckBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;AutoRunCheckBox.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>SimpleVolumeControl - Настройки</value>
+  <data name="&gt;&gt;AutoRunCheckBox.ZOrder" xml:space="preserve">
+    <value>7</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="MuteOnScrollLockCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="MuteOnScrollLockCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 121</value>
+  </data>
+  <data name="MuteOnScrollLockCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>215, 19</value>
+  </data>
+  <data name="MuteOnScrollLockCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="MuteOnScrollLockCheckBox.Text" xml:space="preserve">
+    <value>Play/Pause при нажатии ScrollLock</value>
+  </data>
+  <data name="&gt;&gt;MuteOnScrollLockCheckBox.Name" xml:space="preserve">
+    <value>MuteOnScrollLockCheckBox</value>
+  </data>
+  <data name="&gt;&gt;MuteOnScrollLockCheckBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;MuteOnScrollLockCheckBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;MuteOnScrollLockCheckBox.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="SaveButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>268, 171</value>
+  </data>
+  <data name="SaveButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="SaveButton.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="SaveButton.Text" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="&gt;&gt;SaveButton.Name" xml:space="preserve">
+    <value>SaveButton</value>
+  </data>
+  <data name="&gt;&gt;SaveButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SaveButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;SaveButton.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="CancelButton_.Location" type="System.Drawing.Point, System.Drawing">
+    <value>349, 172</value>
+  </data>
+  <data name="CancelButton_.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="CancelButton_.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="CancelButton_.Text" xml:space="preserve">
+    <value>Отмена</value>
+  </data>
+  <data name="&gt;&gt;CancelButton_.Name" xml:space="preserve">
+    <value>CancelButton_</value>
+  </data>
+  <data name="&gt;&gt;CancelButton_.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CancelButton_.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;CancelButton_.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="textBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 6</value>
+  </data>
+  <data name="textBox1.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="textBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>377, 87</value>
+  </data>
+  <data name="textBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="textBox1.Text" xml:space="preserve">
+    <value>Программа предназначена для удобной регулировки громкости. 
+
+CapsLock + Колесо мыши: регулировка громкости;
+CapsLock + Нажатие на колесо мыши: включить\выключить звук;
+ScrollLock: Play\Pause (опционально);</value>
+  </data>
+  <data name="&gt;&gt;textBox1.Name" xml:space="preserve">
+    <value>textBox1</value>
+  </data>
+  <data name="&gt;&gt;textBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;textBox1.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 176</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>87, 15</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>E. Mesilin, 2024</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="IsAlternativeVolumeControlCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="IsAlternativeVolumeControlCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 146</value>
+  </data>
+  <data name="IsAlternativeVolumeControlCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>301, 19</value>
+  </data>
+  <data name="IsAlternativeVolumeControlCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="IsAlternativeVolumeControlCheckBox.Text" xml:space="preserve">
+    <value>Альтернативный способ управленяи громкостью</value>
+  </data>
+  <data name="&gt;&gt;IsAlternativeVolumeControlCheckBox.Name" xml:space="preserve">
+    <value>IsAlternativeVolumeControlCheckBox</value>
+  </data>
+  <data name="&gt;&gt;IsAlternativeVolumeControlCheckBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;IsAlternativeVolumeControlCheckBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;IsAlternativeVolumeControlCheckBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>7, 15</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>436, 200</value>
+  </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAEAQEAAAAEAIAAoQgAAFgAAACgAAABAAAAAgAAAAAEAIAAAAAAAAEAAABx2AAAcdgAAAAAAAAAA
@@ -411,523 +925,35 @@
         4AAAB//////4AAAf//////8AAP////////////////////////8=
 </value>
   </data>
-  <data name="&gt;&gt;MuteOnScrollLockCheckBox.Name" xml:space="preserve">
-    <value>MuteOnScrollLockCheckBox</value>
-  </data>
-  <data name="MuteOnScrollLockCheckBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 121</value>
-  </data>
-  <data name="AutoRunCheckBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>195, 19</value>
-  </data>
-  <data name="&gt;&gt;textBox1.Name" xml:space="preserve">
-    <value>textBox1</value>
-  </data>
-  <data name="&gt;&gt;textBox1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 173</value>
-  </data>
-  <data name="&gt;&gt;exitToolStripMenuItem.Name" xml:space="preserve">
-    <value>exitToolStripMenuItem</value>
-  </data>
-  <data name="textBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 6</value>
-  </data>
-  <data name="CancelButton_.Location" type="System.Drawing.Point, System.Drawing">
-    <value>349, 165</value>
-  </data>
-  <data name="MuteOnScrollLockCheckBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>304, 19</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="notifyIcon1.Visible" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;AutoRunCheckBox.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="showToolStripMenuItem.Text" xml:space="preserve">
-    <value>Настройки</value>
-  </data>
-  <data name="AutoRunCheckBox.Text" xml:space="preserve">
-    <value>Запускать при старте Windows</value>
-  </data>
-  <data name="&gt;&gt;CancelButton_.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;CancelButton_.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>SettingsForm2</value>
-  </data>
-  <data name="&gt;&gt;contextMenuStrip1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="SaveButton.Text" xml:space="preserve">
-    <value>OK</value>
-  </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>
   </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>7, 15</value>
-  </data>
-  <data name="&gt;&gt;label1.Name" xml:space="preserve">
-    <value>label1</value>
-  </data>
-  <data name="textBox1.Text" xml:space="preserve">
-    <value>Программа предназначена для удобной регулировки громкости. 
-
-CapsLock + Колесо мыши: регулировка громкости;
-CapsLock + Нажатие на среднюю кнопку мыши: Play\Pause;
-ScrollLock: включить\выключить звук (опционально);
-</value>
+  <data name="$this.Text" xml:space="preserve">
+    <value>SimpleVolumeControl - Настройки</value>
   </data>
   <data name="&gt;&gt;notifyIcon1.Name" xml:space="preserve">
     <value>notifyIcon1</value>
   </data>
-  <data name="CancelButton_.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;MuteOnScrollLockCheckBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;SaveButton.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;SaveButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="contextMenuStrip1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>135, 48</value>
-  </data>
-  <data name="&gt;&gt;contextMenuStrip1.Name" xml:space="preserve">
-    <value>contextMenuStrip1</value>
-  </data>
-  <data name="label1.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;textBox1.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>436, 200</value>
-  </data>
-  <data name="SaveButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>257, 165</value>
-  </data>
-  <data name="&gt;&gt;SaveButton.Name" xml:space="preserve">
-    <value>SaveButton</value>
-  </data>
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>87, 15</value>
-  </data>
-  <data name="exitToolStripMenuItem.Text" xml:space="preserve">
-    <value>Выход</value>
-  </data>
-  <data name="AutoRunCheckBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 96</value>
-  </data>
-  <data name="&gt;&gt;MuteOnScrollLockCheckBox.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
   <data name="&gt;&gt;notifyIcon1.Type" xml:space="preserve">
     <value>System.Windows.Forms.NotifyIcon, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="showToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>134, 22</value>
-  </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="MuteOnScrollLockCheckBox.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;AutoRunCheckBox.Name" xml:space="preserve">
-    <value>AutoRunCheckBox</value>
-  </data>
-  <data name="&gt;&gt;CancelButton_.Name" xml:space="preserve">
-    <value>CancelButton_</value>
-  </data>
-  <data name="&gt;&gt;exitToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;showToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;CancelButton_.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="exitToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>134, 22</value>
-  </data>
-  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="textBox1.Multiline" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;AutoRunCheckBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="notifyIcon1.Text" xml:space="preserve">
-    <value>Программа для регулировки звука с помощью колеса мыши</value>
-  </data>
-  <data name="CancelButton_.Text" xml:space="preserve">
-    <value>Отмена</value>
-  </data>
-  <data name="&gt;&gt;SaveButton.Parent" xml:space="preserve">
-    <value>$this</value>
   </data>
   <data name="&gt;&gt;showToolStripMenuItem.Name" xml:space="preserve">
     <value>showToolStripMenuItem</value>
   </data>
-  <data name="CancelButton_.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
+  <data name="&gt;&gt;showToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>E. Mesilin, 2023</value>
+  <data name="&gt;&gt;exitToolStripMenuItem.Name" xml:space="preserve">
+    <value>exitToolStripMenuItem</value>
   </data>
-  <data name="SaveButton.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
+  <data name="&gt;&gt;exitToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="SaveButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
-  </data>
-  <data name="textBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>SettingsForm2</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.Form, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="AutoRunCheckBox.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="AutoRunCheckBox.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="notifyIcon1.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-	  <value>
-		  AAABAAEAQEAAAAEAIAAoQgAAFgAAACgAAABAAAAAgAAAAAEAIAAAAAAAAEAAABx2AAAcdgAAAAAAAAAA
-		  AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-		  AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-		  AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-		  AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-		  AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-		  AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-		  AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-		  AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-		  AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-		  AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-		  AAAAAAAAAAAAAP4Aow7+AKZI/gCmfP4Ap6f+AKvJ/gCr4/4ArfT+AK/9/gCx/P4AsvT+ALTj/gC1yv4A
-		  t6f+ALl8/gC7SP8Auw8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-		  AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-		  AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-		  AAAAAAAAAAAAAAAAAAD+AKAb/gCfc/4AosP+AKP7/wCl//8Ap///AKn//wCq//8ArP//AK7//wCv//8A
-		  sf//ALP//wC0//8Atv//ALf//wC5//8Au//+ALv7/gC9w/4AwHP+AL8cAAAAAAAAAAAAAAAAAAAAAAAA
-		  AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-		  AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-		  AAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8AmUT+AJyz/gCe/P8Aof//AKL//wCk//8Apf//AKf//wCp//8A
-		  qv//AKz//wCu//8Ar///ALH//wCz//8AtP//ALb//wC3//8Auf//ALv//wC8//8Avv//AMD//gDB/P4A
-		  w7P/AMNEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-		  AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-		  AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/gCYQf4Amsj/AJz//wCd//8An///AKH//wCi//8A
-		  pP//AKX//wCn//8Aqf//AKr//wCs//8Arv//AK///wCx//8As///ALT//wC2//8At///ALn//wC7//8A
-		  vP//AL7//wDA//8Awf//AMP//wDF//4Axcn+AMhCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-		  AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-		  AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+AJcb/gCWrf8AmP//AJr//wCc//8A
-		  nf//AJ///wCh//8Aov//AKT//wCl//8Ap///AKn//wCq//8ArP//AK7//wCv//8Asf//ALP//wC0//8A
-		  tv//ALf//wC5//8Au///ALz//wC+//8AwP//AMH//wDD//8Axf//AMb//wDI//4Aya3+AMgcAAAAAAAA
-		  AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-		  AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+AJJc/wCU8P8A
-		  l///AJj//wCa//8AnP//AJ3//wCf//8Aof//AKL//wCk//8Apf//AKf//wCp//8Aqv//AKz//wCu//8A
-		  r///ALH//wCz//8AtP//ALb//wC3//8Auf//ALv//wC8//8Avv//AMD//wDB//8Aw///AMX//wDG//8A
-		  yP//AMn//wDK8P4AzVwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-		  AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP4A
-		  kQf+AJKb/wCU//8Alf//AJf//wCY//8Amv//AJz//wCd//8An///AKH//wCi//8ApP//AKX//wCn//8A
-		  qf//AKr//wCs//8Arv//AK///wCx//8As///ALT//wC2//8At///ALn//wC7//8AvP//AL7//wDA//8A
-		  wf//AMP//wDF//8Axv//AMj//wDJ//8Ay///AM3//gDNnP4A2gcAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-		  AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-		  AAAAAAAAAAAAAP4AjRL+AJDC/wCS//8AlP//AJX//wCX//8AmP//AJr//wCc//8Anf//AJ///wCh//8A
-		  ov//AKT//wCl//8Ap///AKn//wCq//8ArP//AK7//wCv//8Asf//ALP//wC0//8Atv//ALf//wC5//8A
-		  u///ALz//wC+//8AwP//AMH//wDD//8Axf//AMb//wDI//8Ayf//AMv//wDN//8Azv/+AM/D/gDUEgAA
-		  AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-		  AAAAAAAAAAAAAAAAAAAAAAAAAAAAAP4AkBf+AI7S/wCQ//8Akv//AJT//wCV//8Al///AJj//wCa//8A
-		  nP//AJ3//wCf//8Aof//AKL//wCk//8Apf//AKf//wCp//8Aqv//AKz//wCu//8Ar///ALH//wCz//8A
-		  tP//ALb//wC3//8Auf//ALv//wC8//8Avv//AMD//wDB//8Aw///AMX//wDG//8AyP//AMn//wDL//8A
-		  zf//AM7//wDQ//4A0dP+ANIXAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-		  AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP4AjRL+AIzS/wCP//8AkP//AJL//wCU//8A
-		  lf//AJf//wCY//8Amv//AJz//wCd//8An///AKH//wCi//8ApP//AKX//wCn//8Aqf//AKr//wCs//8A
-		  rv//AK///wCx//8As///ALT//wC2//8At///ALn//wC7//8AvP//AL7//wDA//8Awf//AMP//wDF//8A
-		  xv//AMj//wDJ//8Ay///AM3//wDO//8A0P//ANL//gDT0v4A1BIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-		  AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP4AkQf+AIrD/wCN//8A
-		  j///AJD//wCS//8AlP//AJX//wCX//8AmP//AJr//wCc//8Anf//AJ///wCh//8Aov//AKT//wCl//8A
-		  p///AKn//wCq//8ArP//AK7//wCv//8Asf//ALP//wC0//8Atv//ALf//wC5//8Au///ALz//wC+//8A
-		  wP//AMH//wDD//8Axf//AMb//wDI//8Ayf//AMv//wDN//8Azv//AND//wDS//8A0//+ANPD/gDaBwAA
-		  AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-		  AAD+AImc/wCL//8Ajf//AI///wCQ//8Akv//AJT//wCV//8Al///AJj//wCa//8AnP//AJ3//wCf//8A
-		  of//AKL//wCk//8Apf//AKf//wCp//8Aqv//AKz//wCu//8Ar///ALH//wCz//8AtP//ALb//wC3//8A
-		  uf//ALv//wC8//8Avv//AMD//wDB//8Aw///AMX//wDG//8AyP//AMn//wDL//8Azf//AM7//wDQ//8A
-		  0v//ANP//wDV//4A1ZsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-		  AAAAAAAAAAAAAAAAAAD+AIdc/wCK//8Ai///AI3//wCP//8AkP//AJL//wCU//8Alf//AJf//wCY//8A
-		  mv//AJz//wCd//8An///AKH//wCi//8ApP//AKX//wCn//8Aqf//AKr//wCs//8Arv//AK///wCx//8A
-		  s///ALT//wC2//8At///ALn//wC7//8AvP//AL7//wDA//8Awf//AMP//wDF//8Axv//AMj//wDJ//8A
-		  y///AM3//wDO//8A0P//ANL//wDT//8A1f//ANb//gDVXAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-		  AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+AIgc/wCI8P8Aiv//AIv//wCN//8Aj///AJD//wCS//8A
-		  lP//AJX//wCX//8AmP//AJr//wCc//8Anf//AJ///wCh//8Aov//AKT//wCl//8Ap///AKn//wCq//8A
-		  rP//AK7//wCv//8Asf//ALP//wC0//8Atv//ALf//wC5//8Au///ALz//wC+//8AwP//AMH//wDD//8A
-		  xf//AMb//wDI//8Ayf//AMv//wDN//8Azv//AND//wDS//8A0///ANX//wDW//8A1/D+ANkbAAAAAAAA
-		  AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/gCGrv8AiP//AIr//wCL//8A
-		  jf//AI///wCQ//8Akv//AJT//wCV//8Al///AJj//wCa//8AnP//AJ3//wCf//8Aof//AKL//wCk//8A
-		  pf//AKf//wCp//8Aqv//AKz//wCu//8Ar///ALH//wCz//8AtP/+ALTc/gC2Uf4AuY//ALv//wC8//8A
-		  vv//AMD//wDB//8Aw///AMX//wDG//8AyP//AMn//wDL//8Azf//AM7//wDQ//8A0v//ANP//wDV//8A
-		  1v//ANj//gDarQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/gCDQv8A
-		  hv//AIj//wCK//8Ai///AI3//wCP//8AkP//AJL//wCU//8Alf//AJf//wCY//8Amv//AJz//wCd//8A
-		  n///AKH//wCi//8ApP//AKX//wCn//8Aqf//AKr//wCs//8Arv//AK///wCx//4Asvb+ALN9/wC/CAAA
-		  AAD+ALpZ/wC7//8AvP//AL7//wDA//8Awf//AMP//wDF//8Axv//AMj//wDJ//8Ay///AM3//wDO//8A
-		  0P//ANL//wDT//8A1f//ANb//wDY//8A2v/+ANhCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-		  AAAAAAAAAAAAAP4AhMj/AIb//wCI//8Aiv//AIv//wCN//8Aj///AJD//wCS//8AlP//AJX//wCX//8A
-		  mP//AJr//wCc//8Anf//AJ///wCh//8Aov//AKT//wCl//8Ap///AKn//wCq//8ArP//AK7//wCv//4A
-		  sLD/ALcgAAAAAAAAAAAAAAAA/gC6Wf8Au///ALz//wC+//8AwP//AMH//wDD//8Axf//AMb//wDI//8A
-		  yf//AMv//wDN//8Azv//AND//wDS//8A0///ANX//wDW//8A2P//ANr//gDbyAAAAAAAAAAAAAAAAAAA
-		  AAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8Ag0T/AIX//wCG//8AiP//AIr//wCL//8Ajf//AI///wCQ//8A
-		  kv//AJT//wCV//8Al///AJj//wCa//8AnP//AJ3//wCf//8Aof//AKL//wCk//8Apf//AKf//wCp//8A
-		  qv//AKz//gCt2/4Ar0oAAAAAAAAAAAAAAAAAAAAAAAAAAP4Auln/ALv//wC8//8Avv//AMD//wDB//8A
-		  w///AMX//wDG//8AyP//AMn//wDL//8Azf//AM7//wDQ//8A0v//ANP//wDV//8A1v//ANj//wDa//8A
-		  2///ANlEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+AIO0/wCF//8Ahv//AIj//wCK//8A
-		  i///AI3//wCP//8AkP//AJL//wCU//8Alf//AJf//wCY//8Amv//AJz//wCd//8An///AKH//wCi//8A
-		  pP//AKX//wCn//8Aqf/+AKn2/gCrff8AnwgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+ALpZ/wC7//8A
-		  vP//AL7//wDA//8Awf//AMP//wDF//8Axv//AMj//wDJ//8Ay///AM3//wDO//8A0P//ANL//wDT//8A
-		  1f//ANb//wDY//8A2v//ANv//gDcswAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+AH8c/gCD/P8A
-		  hf//AIb//wCI//8Aiv//AIv//wCN//8Aj///AJD//wCS//8AlP//AJX//wCX//8AmP//AJr//wCc//8A
-		  nf//AJ///wCh//8Aov//AKT//wCl//8Ap//+AKiw/wCvIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-		  AAAAAAAA/gC6Wf8Au///ALz//wC+//8AwP//AMH//wDD//8Axf//AMb//gDG1v4Ayo3+AMr+/wDN//8A
-		  zv//AND//wDS//8A0///ANX//wDW//8A2P//ANr//wDb//4A3fz+AOIbAAAAAAAAAAAAAAAAAAAAAAAA
-		  AAAAAAAA/gCCc/8Ag///AIX//wCG//8AiP//AIr//wCL//8Ajf//AI///wCQ//8Akv//AJT//wCV//8A
-		  l///AJj//wCa//8AnP//AJ3//wCf//8Aof//AKL//wCk//4Apdv+AKdJAAAAAAAAAAAAAAAAAAAAAAAA
-		  AAAAAAAAAAAAAAAAAAAAAAAAAAAAAP4Auln/ALv//wC8//8Avv//AMD//wDB//8Aw///AMX//wDG//4A
-		  x68AAAAA/gDMef8Azf//AM7//wDQ//8A0v//ANP//wDV//8A1v//ANj//wDa//8A2///AN3//gDdcwAA
-		  AAAAAAAAAAAAAAAAAAAAAAAAAAAAAP4AgcP/AIP//wCF//8Ahv//AIj//wCK//8Ai///AI3//wCP//8A
-		  kP//AJL//wCU//8Alf//AJf//wCY//8Amv//AJz//wCd//8An///AKH//gCi9f4Ao33/AJ8IAAAAAAAA
-		  AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+ALpZ/wC7//8AvP//AL7//wDA//8A
-		  wf/+AML2/gDE+/8Axv//AMj//gDJff8A/wH+AMyy/wDO//8A0P//ANL//wDT//8A1f//ANb//wDY//8A
-		  2v//ANv//wDd//4A3sMAAAAAAAAAAAAAAAAAAAAAAAAAAP8Adw/+AIL7/wCD//8Ahf//AIb//wCI//8A
-		  iv//AIv//wCN//8Aj///AJD//wCS//8AlP//AJX//wCX//8AmP//AJr//wCc//8Anf//AJ///gCgxf8A
-		  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
-		  AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+ALpZ/wC7//8AvP//AL7//wDA//8A
-		  wf/+AMK7/wDMBf4Axm3/AMj//wDJ//4Aytn/AMwF/gDPgv8A0P//ANL//wDT//8A1f//ANb//wDY//8A
-		  2v//ANv//wDd//8A3//+AN5HAAAAAAAAAAAAAAAAAAAAAP8AiA/+AIL7/wCD//8Ahf//AIb//wCI//8A
-		  iv//AIv//wCN//8Aj///AJD//wCS//8AlP//AJX//wCX//8AmP//AJr//wCc//8Anf//AJ///gCgxf8A
-		  nyAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/gC6Wf8A
-		  u///ALz//wC+//8AwP//AMH//gDBR/4AxEH+AMb4/wDI//4Ayf3+AMtB/gDNGv4AzvL/AND//wDS//8A
-		  0///ANX//wDW//8A2P//ANr//wDb//8A3f/+AN77/gDaDgAAAAAAAAAAAAAAAAAAAAAAAAAA/gCAxP8A
-		  g///AIX//wCG//8AiP//AIr//wCL//8Ajf//AI///wCQ//8Akv//AJT//wCV//8Al///AJj//wCa//8A
-		  nP//AJ3//wCf//8Aof/+AKL1/gCjff4AtgcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-		  AAAAAAAAAAAAAP4Auln/ALv//wC8//8Avv//AMD//wDB//4Awvf+AMT7/wDG//8AyP/+AMl9/wD/Af4A
-		  zLL/AM7//wDQ//8A0v//ANP//wDV//8A1v//ANj//wDa//8A2///AN3//gDewgAAAAAAAAAAAAAAAAAA
-		  AAAAAAAAAAAAAP4AgnP/AIP//wCF//8Ahv//AIj//wCK//8Ai///AI3//wCP//8AkP//AJL//wCU//8A
-		  lf//AJf//wCY//8Amv//AJz//wCd//8An///AKH//wCi//8ApP/+AKXb/gCnSQAAAAAAAAAAAAAAAAAA
-		  AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+ALpZ/wC7//8AvP//AL7//wDA//8Awf//AMP//wDF//8A
-		  xv/+AMew/wAAAf4Aynn/AM3//wDO//8A0P//ANL//wDT//8A1f//ANb//wDY//8A2v//ANv//wDd//4A
-		  33EAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+AH8c/gCD/P8Ahf//AIb//wCI//8Aiv//AIv//wCN//8A
-		  j///AJD//wCS//8AlP//AJX//wCX//8AmP//AJr//wCc//8Anf//AJ///wCh//8Aov//AKT//wCl//8A
-		  p//+AKmv/wCvIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/gC6Wf8Au///ALz//wC+//8A
-		  wP//AMH//wDD//8Axf//AMb//gDH2P4AyY/+AMr+/wDN//8Azv//AND//wDS//8A0///ANX//wDW//8A
-		  2P//ANr//wDb//4A3Pz+ANkbAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP4Ag7P/AIX//wCG//8A
-		  iP//AIr//wCL//8Ajf//AI///wCQ//8Akv//AJT//wCV//8Al///AJj//wCa//8AnP//AJ3//wCf//8A
-		  of//AKL//wCk//8Apf//AKf//wCp//4Aqfb+AKt9/wCfCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP4A
-		  uln/ALv//wC8//8Avv//AMD//wDB//8Aw///AMX//wDG//8AyP//AMn//wDL//8Azf//AM7//wDQ//8A
-		  0v//ANP//wDV//8A1v//ANj//wDa//8A2//+ANyyAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-		  AAD/AINE/wCF//8Ahv//AIj//wCK//8Ai///AI3//wCP//8AkP//AJL//wCU//8Alf//AJf//wCY//8A
-		  mv//AJz//wCd//8An///AKH//wCi//8ApP//AKX//wCn//8Aqf//AKr//wCs//4Ardv+AK9KAAAAAAAA
-		  AAAAAAAAAAAAAAAAAAD+ALpZ/wC7//8AvP//AL7//wDA//8Awf//AMP//wDF//8Axv//AMj//wDJ//8A
-		  y///AM3//wDO//8A0P//ANL//wDT//8A1f//ANb//wDY//8A2v//ANv//gDcQgAAAAAAAAAAAAAAAAAA
-		  AAAAAAAAAAAAAAAAAAAAAAAAAAAAAP4AhMj/AIb//wCI//8Aiv//AIv//wCN//8Aj///AJD//wCS//8A
-		  lP//AJX//wCX//8AmP//AJr//wCc//8Anf//AJ///wCh//8Aov//AKT//wCl//8Ap///AKn//wCq//8A
-		  rP//AK7//wCv//4AsLD+ALEhAAAAAAAAAAAAAAAA/gC6Wf8Au///ALz//wC+//8AwP//AMH//wDD//8A
-		  xf//AMb//wDI//8Ayf//AMv//wDN//8Azv//AND//wDS//8A0///ANX//wDW//8A2P//ANr//gDcxQAA
-		  AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+AIdC/wCG//8AiP//AIr//wCL//8A
-		  jf//AI///wCQ//8Akv//AJT//wCV//8Al///AJj//wCa//8AnP//AJ3//wCf//8Aof//AKL//wCk//8A
-		  pf//AKf//wCp//8Aqv//AKz//wCu//8Ar///ALH//gCy9v4As33/AL8IAAAAAP4Auln/ALv//wC8//8A
-		  vv//AMD//wDB//8Aw///AMX//wDG//8AyP//AMn//wDL//8Azf//AM7//wDQ//8A0v//ANP//wDV//8A
-		  1v//ANj//wDZ//4A2j8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP4A
-		  hq7/AIj//wCK//8Ai///AI3//wCP//8AkP//AJL//wCU//8Alf//AJf//wCY//8Amv//AJz//wCd//8A
-		  n///AKH//wCi//8ApP//AKX//wCn//8Aqf//AKr//wCs//8Arv//AK///wCx//8As///ALT//gC03P4A
-		  tlH+ALmP/wC7//8AvP//AL7//wDA//8Awf//AMP//wDF//8Axv//AMj//wDJ//8Ay///AM3//wDO//8A
-		  0P//ANL//wDT//8A1f//ANb//wDY//8A2aoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-		  AAAAAAAAAAAAAAAAAAD+AIgc/wCI8P8Aiv//AIv//wCN//8Aj///AJD//wCS//8AlP//AJX//wCX//8A
-		  mP//AJr//wCc//8Anf//AJ///wCh//8Aov//AKT//wCl//8Ap///AKn//wCq//8ArP//AK7//wCv//8A
-		  sf//ALP//wC0//8Atv//ALf//wC5//8Au///ALz//wC+//8AwP//AMH//wDD//8Axf//AMb//wDI//8A
-		  yf//AMv//wDN//8Azv//AND//wDS//8A0///ANX//wDW//4A2O7+ANYZAAAAAAAAAAAAAAAAAAAAAAAA
-		  AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP4Ahl3/AIr//wCL//8Ajf//AI///wCQ//8A
-		  kv//AJT//wCV//8Al///AJj//wCa//8AnP//AJ3//wCf//8Aof//AKL//wCk//8Apf//AKf//wCp//8A
-		  qv//AKz//wCu//8Ar///ALH//wCz//8AtP//ALb//wC3//8Auf//ALv//wC8//8Avv//AMD//wDB//8A
-		  w///AMX//wDG//8AyP//AMn//wDL//8Azf//AM7//wDQ//8A0v//ANP//wDV//8A1v/+ANhXAAAAAAAA
-		  AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/gCJnP8A
-		  i///AI3//wCP//8AkP//AJL//wCU//8Alf//AJf//wCY//8Amv//AJz//wCd//8An///AKH//wCi//8A
-		  pP//AKX//wCn//8Aqf//AKr//wCs//8Arv//AK///wCx//8As///ALT//wC2//8At///ALn//wC7//8A
-		  vP//AL7//wDA//8Awf//AMP//wDF//8Axv//AMj//wDJ//8Ay///AM3//wDO//8A0P//ANL//wDT//8A
-		  1f/+ANaWAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-		  AAAAAAAAAAAAAP4AkQf+AIvD/wCN//8Aj///AJD//wCS//8AlP//AJX//wCX//8AmP//AJr//wCc//8A
-		  nf//AJ///wCh//8Aov//AKT//wCl//8Ap///AKn//wCq//8ArP//AK7//wCv//8Asf//ALP//wC0//8A
-		  tv//ALf//wC5//8Au///ALz//wC+//8AwP//AMH//wDD//8Axf//AMb//wDI//8Ayf//AMv//wDN//8A
-		  zv//AND//wDS//8A0//+ANW+/wDUBgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-		  AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/gCNEv4AjdP/AI///wCQ//8Akv//AJT//wCV//8A
-		  l///AJj//wCa//8AnP//AJ3//wCf//8Aof//AKL//wCk//8Apf//AKf//wCp//8Aqv//AKz//wCu//8A
-		  r///ALH//wCz//8AtP//ALb//wC3//8Auf//ALv//wC8//8Avv//AMD//wDB//8Aw///AMX//wDG//8A
-		  yP//AMn//wDL//8Azf//AM7//wDQ//8A0v/+ANPO/wDPEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-		  AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+AJAX/gCP0v8A
-		  kP//AJL//wCU//8Alf//AJf//wCY//8Amv//AJz//wCd//8An///AKH//wCi//8ApP//AKX//wCn//8A
-		  qf//AKr//wCs//8Arv//AK///wCx//8As///ALT//wC2//8At///ALn//wC7//8AvP//AL7//wDA//8A
-		  wf//AMP//wDF//8Axv//AMj//wDJ//8Ay///AM3//wDO//8A0P/+ANHP/gDOFQAAAAAAAAAAAAAAAAAA
-		  AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-		  AAAAAAAAAAAAAP4AjRL+AI/D/wCS//8AlP//AJX//wCX//8AmP//AJr//wCc//8Anf//AJ///wCh//8A
-		  ov//AKT//wCl//8Ap///AKn//wCq//8ArP//AK7//wCv//8Asf//ALP//wC0//8Atv//ALf//wC5//8A
-		  u///ALz//wC+//8AwP//AMH//wDD//8Axf//AMb//wDI//8Ayf//AMv//wDN//8Azv/+ANC+/wDPEAAA
-		  AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-		  AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/gCRB/4Akpv/AJT//wCV//8Al///AJj//wCa//8A
-		  nP//AJ3//wCf//8Aof//AKL//wCk//8Apf//AKf//wCp//8Aqv//AKz//wCu//8Ar///ALH//wCz//8A
-		  tP//ALb//wC3//8Auf//ALv//wC8//8Avv//AMD//wDB//8Aw///AMX//wDG//8AyP//AMn//wDL//8A
-		  zP/+AM6X/wDUBgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-		  AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/gCSXP8A
-		  lPD/AJf//wCY//8Amv//AJz//wCd//8An///AKH//wCi//8ApP//AKX//wCn//8Aqf//AKr//wCs//8A
-		  rv//AK///wCx//8As///ALT//wC2//8At///ALn//wC7//8AvP//AL7//wDA//8Awf//AMP//wDF//8A
-		  xv//AMj//wDJ//4Ay+7+AMpYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-		  AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-		  AAAAAAAAAAAAAAAAAAD+AJcb/gCWrf8AmP//AJr//wCc//8Anf//AJ///wCh//8Aov//AKT//wCl//8A
-		  p///AKn//wCq//8ArP//AK7//wCv//8Asf//ALP//wC0//8Atv//ALf//wC5//8Au///ALz//wC+//8A
-		  wP//AMH//wDD//8Axf//AMb//wDH//4Ayav+AMQaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-		  AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-		  AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+AJZC/gCayP8AnP//AJ3//wCf//8A
-		  of//AKL//wCk//8Apf//AKf//wCp//8Aqv//AKz//wCu//8Ar///ALH//wCz//8AtP//ALb//wC3//8A
-		  uf//ALv//wC8//8Avv//AMD//wDB//8Aw///AMX//gDGxv8Ax0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-		  AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-		  AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-		  AAD/AJlE/gCes/4Anvz/AKH//wCi//8ApP//AKX//wCn//8Aqf//AKr//wCs//8Arv//AK///wCx//8A
-		  s///ALT//wC2//8At///ALn//wC7//8AvP//AL7//wDA//4Awfz+AMKy/gDCQwAAAAAAAAAAAAAAAAAA
-		  AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-		  AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-		  AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+AJoc/gChc/4AosP+AKL8/wCl//8Ap///AKn//wCq//8A
-		  rP//AK7//wCv//8Asf//ALP//wC0//8Atv//ALf//wC5//8Au//+ALv7/gC9w/4AwHL+AMYbAAAAAAAA
-		  AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-		  AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-		  AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wCqD/4A
-		  pkj+AKd9/gCoqP4Aqsr+AKvj/gCt9P4Ar/3+ALH9/gCx9f4AtOT+ALXK/gC3qP4At33+ALxJ/wC7DwAA
-		  AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-		  AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-		  AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-		  AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-		  AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-		  AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-		  AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-		  AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-		  AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-		  AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-		  AAAAAAAA/////////////////////////wAA///////4AAAf/////+AAAAf/////gAAAAf////4AAAAA
-		  f////AAAAAA////wAAAAAA///+AAAAAAB///wAAAAAAD//+AAAAAAAH//wAAAAAAAP//AAAAAAAA//4A
-		  AAAAAAB//AAAAAAAAD/8AAAAAAAAP/gAAAAIAAAf+AAAADgAAB/wAAAA+AAAD/AAAAH4AAAP4AAAB/gA
-		  AAfgAAAf+AEAB+AAAD/4AAAHwAAA//gAAAPAAAH/+AAAA8AD+f/4AAADwAf5//gAIAPAB/n/+AAAA8AP
-		  +f/4AgADwA/5//gAAAPAD/n/+CAAA8AP+f/4IAADwA/5//gAAAPAD/n/+AIAA8AH+f/4AAADwAf5//gA
-		  IAPAA/n/+AAAA8AAAf/4AAADwAAA//gAAAPgAAA/+AAAB+AAAB/4AAAH4AAAB/gAAAfwAAAB+AAAD/AA
-		  AAD4AAAP+AAAADgAAB/4AAAACAAAH/wAAAAAAAA//AAAAAAAAD/+AAAAAAAAf/8AAAAAAAD//wAAAAAA
-		  AP//gAAAAAAB///AAAAAAAP//+AAAAAAB///8AAAAAAP///8AAAAAD////4AAAAAf////4AAAAH/////
-		  4AAAB//////4AAAf//////8AAP////////////////////////8=
-	  </value>
-  </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;MuteOnScrollLockCheckBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="MuteOnScrollLockCheckBox.Text" xml:space="preserve">
-    <value>Выключать\включать звук при нажатии ScrollLock</value>
-  </data>
-  <data name="MuteOnScrollLockCheckBox.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="textBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>377, 87</value>
-  </data>
-  <metadata name="contextMenuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>130, 17</value>
-  </metadata>
-  <metadata name="notifyIcon1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="$this.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
 </root>

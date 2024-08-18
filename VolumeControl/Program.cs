@@ -4,6 +4,7 @@ using System.Diagnostics;
 using System.Runtime.InteropServices;
 using Gma.System.MouseKeyHook;
 using System.Threading;
+
 namespace VolumeControl
 {
     internal class Program
@@ -43,7 +44,8 @@ namespace VolumeControl
                 var vkCode = Marshal.ReadInt32(lParam);
                 if (((Keys)vkCode == Keys.Scroll))
                 {
-                    keybd_event((byte)Keys.VolumeMute, 0, 0, 0);
+                    //keybd_event((byte)Keys.VolumeMute, 0, 0, 0);
+                    keybd_event((byte)Keys.MediaPlayPause, 0, 0, 0);
                     return (IntPtr)1;
                 }
             }
@@ -72,12 +74,12 @@ namespace VolumeControl
         public static void Do()
         {
 
-            //mute по нажатию ScrollLock
+            //Play\Pause по нажатию ScrollLock
             _hookId = SetHook(Proc);
 
             _keyboardMouseEvents = Hook.GlobalEvents();
             _keyboardMouseEvents.MouseWheelExt += KeyboardMouseEvents_MouseWheelExt; //звук колесом мыши при зажатом капсе
-            _keyboardMouseEvents.MouseDownExt += KeyboardMouseEvents_MouseDownExt;//Play\Pause при нажатии на колесо мыши с зажатым капсом
+            _keyboardMouseEvents.MouseDownExt += KeyboardMouseEvents_MouseDownExt;//Выкл. звук при нажатии на колесо мыши с зажатым капсом
 
             //keyboardMouseEvents.KeyDown += KeyboardMouseEvents_KeyDown;
 
@@ -137,30 +139,54 @@ namespace VolumeControl
                 return;
             if (e.Button == MouseButtons.Middle && Keyboard.IsKeyDown(Keys.CapsLock))
             {
-                keybd_event((byte)Keys.MediaPlayPause, 0, 0, 0);
+                //keybd_event((byte)Keys.MediaPlayPause, 0, 0, 0);
+                keybd_event((byte)Keys.VolumeMute, 0, 0, 0);
                 e.Handled = true;
                 PreventCaps();
             }
-            //if (e.Button == MouseButtons.Right && Keyboard.IsKeyDown(Keys.CapsLock))
-            //{
-            //    keybd_event((byte)Keys.MediaNextTrack, 0, 0, 0);
-            //}
-            //if (e.Button == MouseButtons.Left && Keyboard.IsKeyDown(Keys.CapsLock))
-            //{
-            //    keybd_event((byte)Keys.MediaPreviousTrack, 0, 0, 0);
-            //}
+
+            if (e.Button == MouseButtons.Right && Keyboard.IsKeyDown(Keys.CapsLock))
+            {
+                keybd_event((byte)Keys.MediaNextTrack, 0, 0, 0);
+            }
+            if (e.Button == MouseButtons.Left && Keyboard.IsKeyDown(Keys.CapsLock))
+            {
+                keybd_event((byte)Keys.MediaPreviousTrack, 0, 0, 0);
+            }
         }
 
         private static void KeyboardMouseEvents_MouseWheelExt(object sender, MouseEventExtArgs e)
         {
             if (!Keyboard.IsKeyDown(Keys.CapsLock))
                 return;
-
-            if (e.Delta > 0)
-                keybd_event((byte)Keys.VolumeUp, 0, 0, 0);
-            else
-                keybd_event((byte)Keys.VolumeDown, 0, 0, 0);
             e.Handled = true;
+
+            var isAlternative = Properties.Settings.Default.IsAlternativeVolumeControl;
+
+            int currentVolume = WindowsSystemAudio.GetVolume();
+            try
+            {
+                if (e.Delta > 0)
+                {
+                    if (isAlternative)
+                        WindowsSystemAudio.SetVolume(currentVolume + 3);
+                    else 
+                        keybd_event((byte)Keys.VolumeUp, 0, 0, 0);
+                }
+                else
+                {
+                    if (isAlternative)
+                        WindowsSystemAudio.SetVolume(currentVolume - 3);
+                    else
+                        keybd_event((byte)Keys.VolumeDown, 0, 0, 0);
+                }
+            }
+            catch
+            {
+                //
+            }
+            //e.Handled = true;
+
             PreventCaps();
         }
 
@@ -215,6 +241,5 @@ namespace VolumeControl
                 return KeyStates.Toggled == (GetKeyState(key) & KeyStates.Toggled);
             }
         }
-
     }
 }
