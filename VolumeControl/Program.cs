@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Windows.Forms;
 using System.Diagnostics;
 using System.Runtime.InteropServices;
@@ -26,9 +27,16 @@ namespace VolumeControl
         #region перехват нажатия ScrollLock
         private const int WM_WH_KEYBOARD_LL = 13;
         private const int WM_KEYDOWN = 0x0100;
-        private static readonly LowLevelKeyboardProc Proc = HookCallback;
-        private static IntPtr _hookId = IntPtr.Zero;
-        private static IntPtr SetHook(LowLevelKeyboardProc proc)
+
+		//private static readonly LowLevelKeyboardProc Proc = HookCallback;
+		private static IntPtr _hookId = IntPtr.Zero;
+		
+		/// <summary>
+		/// Перехват нажатия кнопки на клавиатуре
+		/// </summary>
+		/// <param name="proc"></param>
+		/// <returns></returns>
+		private static IntPtr SetHook(LowLevelKeyboardProc proc)
         {
             using var curProcess = Process.GetCurrentProcess();
             using var curModule = curProcess.MainModule;
@@ -37,18 +45,44 @@ namespace VolumeControl
 
         private delegate IntPtr LowLevelKeyboardProc(int nCode, IntPtr wParam, IntPtr lParam);
 
+        /// <summary>
+        /// Перехват нажатия кнопки на клавиатуре
+        /// </summary>
+        /// <param name="nCode"></param>
+        /// <param name="wParam"></param>
+        /// <param name="lParam"></param>
+        /// <returns></returns>
         private static IntPtr HookCallback(int nCode, IntPtr wParam, IntPtr lParam)
         {
-            if (Properties.Settings.Default.MuteOnScrollLock && (nCode >= 0) && (wParam == (IntPtr)WM_KEYDOWN))
+			if (Keyboard.IsKeyDown(Keys.CapsLock) && (nCode >= 0) && (wParam == (IntPtr)WM_KEYDOWN))
             {
                 var vkCode = Marshal.ReadInt32(lParam);
-                if (((Keys)vkCode == Keys.Scroll))
+                byte action=0;
+                
+                switch ((Keys)vkCode)
                 {
-                    //keybd_event((byte)Keys.VolumeMute, 0, 0, 0);
-                    keybd_event((byte)Keys.MediaPlayPause, 0, 0, 0);
-                    return (IntPtr)1;
+                    case Keys.Right:
+	                    action = (byte)Keys.MediaNextTrack;
+                        break;
+                    case Keys.Left:
+                        action= (byte)Keys.MediaPreviousTrack;
+                        break;
+                    case Keys.Up:
+	                    action = (byte)Keys.MediaPlayPause;
+                        break;
+                    case Keys.Down:
+	                    action = (byte)Keys.MediaStop;
+                        break;
+				}
+
+                if (action != 0)
+                {
+	                keybd_event(action, 0, 0, 0);
+	                PreventCaps();
                 }
-            }
+
+                return (IntPtr)1;
+			}
             return CallNextHookEx(_hookId, nCode, wParam, lParam);
         }
 
@@ -75,7 +109,7 @@ namespace VolumeControl
         {
 
             //Play\Pause по нажатию ScrollLock
-            _hookId = SetHook(Proc);
+            //_hookId = SetHook(Proc);
 
             _keyboardMouseEvents = Hook.GlobalEvents();
             _keyboardMouseEvents.MouseWheelExt += KeyboardMouseEvents_MouseWheelExt; //звук колесом мыши при зажатом капсе
@@ -83,79 +117,106 @@ namespace VolumeControl
 
             //keyboardMouseEvents.KeyDown += KeyboardMouseEvents_KeyDown;
 
+            //Последовательность нажатий
             //var map = new Dictionary<Sequence, Action>
             //{
             //    //{Sequence.FromString("Control+Z,B"), Console.WriteLine},
             //    //{Sequence.FromString("Control+Z,Z"), Console.WriteLine},
             //    {Sequence.FromString("CapsLock,CapsLock"), () => keybd_event((byte)Keys.MediaNextTrack, 0, 0, 0)}
             //};
+
             //keyboardMouseEvents.OnSequence(map);
-            //var map = new Dictionary<Combination, Action>
-            //{
-            //    //Specify which key combinations to detect and action - what to do if detected.
-            //    //You can create a key combinations directly from string or ...
-            //    //{Combination.FromString("A+B+C"), () => Debug.WriteLine(":-)")},
-            //    //... or alternatively you can use builder methods
-            //    //{Combination.TriggeredBy(Keys.F).With(Keys.E).With(Keys.D), () => Debug.WriteLine(":-D")},
-            //    {Combination.TriggeredBy(Keys.Up).With(Keys.CapsLock), () => keybd_event((byte)Keys.VolumeUp, 0, 0, 0)},
-            //    {Combination.TriggeredBy(Keys.Down).With(Keys.CapsLock), () => keybd_event((byte)Keys.VolumeDown, 0, 0, 0)},
-            //    {Combination.TriggeredBy(Keys.Left).With(Keys.CapsLock), () => keybd_event((byte)Keys.MediaPreviousTrack, 0, 0, 0)},
-            //    {Combination.TriggeredBy(Keys.Right).With(Keys.CapsLock), () => keybd_event((byte)Keys.MediaNextTrack, 0, 0, 0)},
-            //    //{Combination.FromString("Alt+A"), () => Debug.WriteLine(":-P")},
-            //    //{Combination.FromString("Control+Shift+Z"), () => Debug.WriteLine(":-/")},
-            //    //{Combination.FromString("Escape"), quit}
-            //};
-            //keyboardMouseEvents.OnCombination(map);
+
+            //Комбинация нажатий
+            var map = new Dictionary<Combination, Action>
+            {
+                //Specify which key combinations to detect and action - what to do if detected.
+                //You can create a key combinations directly from string or ...
+                //{Combination.FromString("A+B+C"), () => Debug.WriteLine(":-)")},
+                //... or alternatively you can use builder methods
+                //{Combination.TriggeredBy(Keys.F).With(Keys.E).With(Keys.D), () => Debug.WriteLine(":-D")},
+                //{Combination.TriggeredBy(Keys.Left).With(Keys.CapsLock), () => keybd_event((byte)Keys.MediaPreviousTrack, 0, 0, 0)},
+                {Combination.TriggeredBy(Keys.Right).With(Keys.Left), () =>
+	                {
+		                //keybd_event((byte)Keys.MediaNextTrack, 0, 0, 0);
+		                keybd_event(0x000000B0, 0, 0, 0);
+					}
+				},
+				{Combination.TriggeredBy(Keys.Left).With(Keys.Right), () =>
+					{
+						//keybd_event((byte)Keys.MediaPreviousTrack, 0, 0, 0);
+						keybd_event(0x000000B1, 0, 0, 0);
+					}
+				},
+				{Combination.TriggeredBy(Keys.Up).With(Keys.Down), () =>
+					{
+						//keybd_event((byte)Keys.MediaPlayPause, 0, 0, 0);
+						keybd_event(0x000000B3, 0, 0, 0);
+					}
+				},
+                //{Combination.FromString("Alt+A"), () => Debug.WriteLine(":-P")},
+                //{Combination.FromString("Control+Shift+Z"), () => Debug.WriteLine(":-/")},
+                //{Combination.FromString("Escape"), quit}
+            };
+            _keyboardMouseEvents.OnCombination(map);
         }
 
-        //private static void KeyboardMouseEvents_KeyDown(object sender, KeyEventArgs e)
-        //{
-        //    if (!Keyboard.IsKeyDown(Keys.CapsLock))
-        //        return;
-        //    switch (e.KeyCode)
-        //    {
-        //        case Keys.Up:
-        //            keybd_event((byte)Keys.VolumeUp, 0, 0, 0);
-        //            break;
-        //        case Keys.Down:
-        //            keybd_event((byte)Keys.VolumeDown, 0, 0, 0);
-        //            break;
-        //        case Keys.Left:
-        //            keybd_event((byte)Keys.MediaPreviousTrack, 0, 0, 0);
-        //            break;
-        //        case Keys.Right:
-        //            keybd_event((byte)Keys.MediaNextTrack, 0, 0, 0);
-        //            break;
-        //    }
+		//Перехват нажатий кнопок мыши
+		//private static void KeyboardMouseEvents_KeyDown(object sender, KeyEventArgs e)
+		//{
+		//    if (!Keyboard.IsKeyDown(Keys.CapsLock))
+		//        return;
+		//    switch (e.KeyCode)
+		//    {
+		//        case Keys.Up:
+		//            keybd_event((byte)Keys.VolumeUp, 0, 0, 0);
+		//            break;
+		//        case Keys.Down:
+		//            keybd_event((byte)Keys.VolumeDown, 0, 0, 0);
+		//            break;
+		//        case Keys.Left:
+		//            keybd_event((byte)Keys.MediaPreviousTrack, 0, 0, 0);
+		//            break;
+		//        case Keys.Right:
+		//            keybd_event((byte)Keys.MediaNextTrack, 0, 0, 0);
+		//            break;
+		//    }
 
-        //    e.SuppressKeyPress = true;
-        //    //e.Handled = true;
-        //    PreventCaps();
-        //}
+		//    e.SuppressKeyPress = true;
+		//    //e.Handled = true;
+		//    PreventCaps();
+		//}
 
-        private static void KeyboardMouseEvents_MouseDownExt(object sender, MouseEventExtArgs e)
+		/// <summary>
+		/// Перехват нажатий кнопок мыши
+		/// </summary>
+		/// <param name="sender"></param>
+		/// <param name="e"></param>
+		private static void KeyboardMouseEvents_MouseDownExt(object sender, MouseEventExtArgs e)
         {
-            if (!Keyboard.IsKeyDown(Keys.CapsLock))
-                return;
-            if (e.Button == MouseButtons.Middle && Keyboard.IsKeyDown(Keys.CapsLock))
-            {
-                //keybd_event((byte)Keys.MediaPlayPause, 0, 0, 0);
-                keybd_event((byte)Keys.VolumeMute, 0, 0, 0);
-                e.Handled = true;
-                PreventCaps();
-            }
+	        if (!Keyboard.IsKeyDown(Keys.CapsLock))
+		        return;
+	        
+	        if (e.Button == MouseButtons.Left)
+	        {
+		        //keybd_event((byte)Keys.MediaNextTrack, 0, 0, 0);
+		        keybd_event(0x000000B0, 0, 0, 0);
+	        }
+	        if (e.Button == MouseButtons.Middle)
+	        {
+				//keybd_event((byte)Keys.MediaPlayPause, 0, 0, 0);
+				keybd_event(0x000000B3, 0, 0, 0);
+	        }
+			e.Handled = true;
+		    PreventCaps();
+		}
 
-            if (e.Button == MouseButtons.Right && Keyboard.IsKeyDown(Keys.CapsLock))
-            {
-                keybd_event((byte)Keys.MediaNextTrack, 0, 0, 0);
-            }
-            if (e.Button == MouseButtons.Left && Keyboard.IsKeyDown(Keys.CapsLock))
-            {
-                keybd_event((byte)Keys.MediaPreviousTrack, 0, 0, 0);
-            }
-        }
-
-        private static void KeyboardMouseEvents_MouseWheelExt(object sender, MouseEventExtArgs e)
+		/// <summary>
+		/// Перехват прокрутки колесом мыши
+		/// </summary>
+		/// <param name="sender"></param>
+		/// <param name="e"></param>
+		private static void KeyboardMouseEvents_MouseWheelExt(object sender, MouseEventExtArgs e)
         {
             if (!Keyboard.IsKeyDown(Keys.CapsLock))
                 return;
@@ -185,7 +246,6 @@ namespace VolumeControl
             {
                 //
             }
-            //e.Handled = true;
 
             PreventCaps();
         }

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!--
-    Microsoft ResX Schema
+    Microsoft ResX Schema 
 
     Version 2.0
 
@@ -48,7 +48,7 @@
     value   : The object must be serialized with
             : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
             : and then encoded with base64 encoding.
-
+    
     mimetype: application/x-microsoft.net.object.soap.base64
     value   : The object must be serialized with
             : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
@@ -443,7 +443,7 @@
     <value>True</value>
   </data>
   <data name="AutoRunCheckBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 96</value>
+    <value>7, 134</value>
   </data>
   <data name="AutoRunCheckBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>195, 19</value>
@@ -466,35 +466,8 @@
   <data name="&gt;&gt;AutoRunCheckBox.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
-  <data name="MuteOnScrollLockCheckBox.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="MuteOnScrollLockCheckBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 121</value>
-  </data>
-  <data name="MuteOnScrollLockCheckBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>215, 19</value>
-  </data>
-  <data name="MuteOnScrollLockCheckBox.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="MuteOnScrollLockCheckBox.Text" xml:space="preserve">
-    <value>Play/Pause при нажатии ScrollLock</value>
-  </data>
-  <data name="&gt;&gt;MuteOnScrollLockCheckBox.Name" xml:space="preserve">
-    <value>MuteOnScrollLockCheckBox</value>
-  </data>
-  <data name="&gt;&gt;MuteOnScrollLockCheckBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;MuteOnScrollLockCheckBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;MuteOnScrollLockCheckBox.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
   <data name="SaveButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>268, 171</value>
+    <value>268, 195</value>
   </data>
   <data name="SaveButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 23</value>
@@ -515,10 +488,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;SaveButton.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="CancelButton_.Location" type="System.Drawing.Point, System.Drawing">
-    <value>349, 172</value>
+    <value>349, 195</value>
   </data>
   <data name="CancelButton_.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 23</value>
@@ -539,26 +512,27 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;CancelButton_.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="textBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 6</value>
+    <value>12, 38</value>
   </data>
   <data name="textBox1.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="textBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>377, 87</value>
+    <value>412, 90</value>
   </data>
   <data name="textBox1.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
   </data>
   <data name="textBox1.Text" xml:space="preserve">
-    <value>Программа предназначена для удобной регулировки громкости. 
-
-CapsLock + Колесо мыши: регулировка громкости;
-CapsLock + Нажатие на колесо мыши: включить\выключить звук;
-ScrollLock: Play\Pause (опционально);</value>
+    <value>CapsLock + Колесо мыши: регулировка громкости;
+CapsLock + Левая кнопка мыши: Следующий трек;
+CapsLock + нажатие на колесо мыши: pause\play;
+Стрелка влево + Стрелка вправо: Следующий трек;
+Стрелка вправо + Стрелка влево: Предыдущий трек;
+Стрелка вниз + Стрелка вверх: pause\play.</value>
   </data>
   <data name="&gt;&gt;textBox1.Name" xml:space="preserve">
     <value>textBox1</value>
@@ -570,13 +544,13 @@ ScrollLock: Play\Pause (опционально);</value>
     <value>$this</value>
   </data>
   <data name="&gt;&gt;textBox1.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 176</value>
+    <value>7, 203</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
     <value>87, 15</value>
@@ -597,13 +571,13 @@ ScrollLock: Play\Pause (опционально);</value>
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="IsAlternativeVolumeControlCheckBox.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="IsAlternativeVolumeControlCheckBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 146</value>
+    <value>7, 159</value>
   </data>
   <data name="IsAlternativeVolumeControlCheckBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>301, 19</value>
@@ -624,6 +598,36 @@ ScrollLock: Play\Pause (опционально);</value>
     <value>$this</value>
   </data>
   <data name="&gt;&gt;IsAlternativeVolumeControlCheckBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt, style=Bold</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 9</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>379, 15</value>
+  </data>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Программа предназначена для удобной регулировки громкости</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -636,7 +640,7 @@ ScrollLock: Play\Pause (опционально);</value>
     <value>7, 15</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>436, 200</value>
+    <value>436, 230</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
