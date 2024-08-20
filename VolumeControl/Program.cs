@@ -207,8 +207,8 @@ namespace VolumeControl
 				//keybd_event((byte)Keys.MediaPlayPause, 0, 0, 0);
 				keybd_event(0x000000B3, 0, 0, 0);
 	        }
-			e.Handled = true;
 		    PreventCaps();
+			e.Handled = true;
 		}
 
 		/// <summary>
